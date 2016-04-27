@@ -45,7 +45,8 @@
 		  @include absolute(top 14px);
 		  z-index: 3;
 		  font-style: italic;
-		  font-family: $font-family--primary--regular;
+	      &:lang(en){font-family: $font-family--primary--regular--en};
+	      &:lang(ja){font-family: $font-family--ja};
 		  text-shadow: 1px 1px 1px white;
 		  @include transition( all 0.05s linear );
 	}
@@ -134,7 +135,8 @@
 	.has-error .form__errorMessage {
 	    color: $red;
 	    font-style: italic;
-	    font-family: $font-family--primary--regular;
+	    &:lang(en){font-family: $font-family--primary--regular--en};
+	    &:lang(ja){font-family: $font-family--ja};
 	    font-size: 12px;
 
 

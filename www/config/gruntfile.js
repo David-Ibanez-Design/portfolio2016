@@ -85,10 +85,15 @@ module.exports = function(grunt)
 		      separator: ';'
 
 	    },
-		    dist: {
-		      src: [ '../src/js/libs/*','../src/js/libs/vendors/*', '../src/js/*.js', '../src/img/svg/fallbacks/grunticon.loader.js'],
-		      dest: '../dist/js/concat.js'
+		    en_concat: {
+		      src: [ '../src/css/libs/*','../src/css/*.css'],
+		      dest: '../src/css/style_en.css.js'
+		    },
+		    jp_concat: {
+		      src: [ '../src/css/libs/*','../src/css/*.css'],
+		      dest: '../src/css/style_jp.css.js'
 		    }
+
 
 	  },
 
@@ -208,8 +213,7 @@ svgmin: {
 
         dist: {
             files: {
-                '../src/css/style_en.css': '../src/scss/style_en.scss',
-                '../src/css/style_jp.css': '../src/scss/style_jp.scss'
+                '../src/css/style.css': '../src/scss/style.scss',
             }
         }
     },

@@ -44,7 +44,8 @@
       .label{
         font-size: 12px;
         color: $white;
-        font-family : $font-family--secondary--light;
+        &:lang(en){font-family: $font-family--secondary--light--en};
+        &:lang(ja){font-family: $font-family--ja};
       }
 
 

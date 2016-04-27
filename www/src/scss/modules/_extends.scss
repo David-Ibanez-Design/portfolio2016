@@ -10,7 +10,6 @@
 %btn{
 	border-width  : 2px;
 	border-style  : solid;
-	font-family   : $font-family--secondary--bold;
 	display       : block;
 	text-align    : center;
 	text-transform: uppercase;
@@ -28,6 +27,9 @@
 		border-color:$red;
 		color:$white;
 	}
+
+	&:lang(en){font-family: $font-family--secondary--bold--en;}
+	&:lang(ja){font-family: $font-family--ja;}
 }
 
 %btn-full{
@@ -92,7 +94,8 @@
   font-size: 17px;
   color:$black;
   width: 100%;
-  font-family: $font-family--secondary--bold;
+  &:lang(en){font-family: $font-family--secondary--bold--en;}
+  &:lang(ja){font-family: $font-family--ja;}
   margin-bottom: -6px;
   &:required{background: img-path(required) scroll transparent no-repeat  98% center;}
 }
@@ -128,7 +131,8 @@
 	@include mobile {@include adjust-font-size-to(23px);}
 	@include xsMobile {@include adjust-font-size-to(20px);}
 	line-height: 35px;
-	font-family     : $font-family--secondary--black;
+	&:lang(en){font-family: $font-family--secondary--black--en;}
+	&:lang(ja){font-family: $font-family--ja;}
 }
 
 %hdln-xlarge {
@@ -158,17 +162,19 @@
 	@include tablet {@include adjust-font-size-to(20px);}
 	@include mobile {@include adjust-font-size-to(20px);}
 	@include xsMobile {@include adjust-font-size-to(20px);}
-
-	font-family     : $font-family--primary--regular;
+	&:lang(en){font-family: $font-family--primary--regular--en;}
+	&:lang(ja){font-family: $font-family--ja;}
 	font-weight: 900;
 }
 
 %para {
-	font-family     : $font-family--secondary--light;
+	&:lang(en){font-family: $font-family--secondary--light--en;}
+	&:lang(ja){font-family: $font-family--ja;}
 }
 
 %para-intro {
-	font-family     : $font-family--secondary--regular;
+	&:lang(en){font-family: $font-family--secondary--regular--en;}
+	&:lang(ja){font-family: $font-family--ja;}
 	clear: both;
 }
 
@@ -192,7 +198,8 @@
 	@include adjust-font-size-to(14px);
 	line-height:17px;
 	font-weight     : $font-weight--medium;
-	font-family     : $font-family--secondary--regular;
+	&:lang(en){font-family: $font-family--secondary--regular--en;}
+	&:lang(ja){font-family: $font-family--ja;}
 
 	@include leader(0.5);
 	@include trailer(1);
@@ -202,7 +209,8 @@
 	@include adjust-font-size-to(10px);
 	line-height:17px;
 	font-weight     : $font-weight--medium;
-	font-family     : $font-family--secondary--regular;
+	&:lang(en){font-family: $font-family--secondary--regular--en;}
+	&:lang(ja){font-family: $font-family--ja;}
 
 	@include leader(0.5);
 	@include trailer(1);
@@ -219,7 +227,8 @@
     margin-right: 17px;
     font-size: 14px;
     width: 100%;
-	font-family: $font-family--primary--regular;
+	&:lang(en){font-family: $font-family--primary--regular--en;}
+	&:lang(ja){font-family: $font-family--ja;}
 	padding-top: 11px;
 }
 

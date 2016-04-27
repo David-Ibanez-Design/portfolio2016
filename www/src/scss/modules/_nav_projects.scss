@@ -98,7 +98,7 @@
 
 			@include m(titre) {
 
-				font-family:  ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif, $font-family--secondary--bold;
+				font-family:  ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
 				font-size: 12px;
 				color: $white;
 				display: block;
@@ -106,7 +106,8 @@
 
 			@include m(text) {
 
-				font-family:   $font-family--secondary--light;
+				&:lang(en){font-family: $font-family--secondary--light--en};
+				&:lang(ja){font-family: $font-family--ja};
 				margin-top: 8px;
 				line-height: 14px;
 				font-size: 11px;
@@ -116,7 +117,7 @@
 
 			@include m(link) {
 
-				font-family:  ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif, $font-family--secondary--light;
+				font-family:  ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
 				display: block;
 				font-size: 10px;
 				color:#1d96b8;

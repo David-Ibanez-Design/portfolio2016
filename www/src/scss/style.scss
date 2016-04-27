@@ -20,7 +20,7 @@
 /* ------ Settings --------*/
 
 @import "settings/config";
-@import "settings/font_jp";
+@import "settings/font";
 @import "settings/functions";
 @import "settings/mixins";
 @import "settings/helpers";
@@ -28,6 +28,8 @@
 /* ------ Base --------*/
 
 @import "base/base";
+
+
 
 /* ------ Layout --------*/
 

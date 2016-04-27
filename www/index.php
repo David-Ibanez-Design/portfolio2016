@@ -10,16 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="src/css/libs/simplebar.css" />
-  <?php
-    if($current_lang == 'en')
-      {
-        echo '<link rel="stylesheet" href="src/css/style_en.css">';
-      }
-      else
-      {
-        echo '<link rel="stylesheet" href="src/css/style_jp.css">';
-      }
-  ?>
+  <link rel="stylesheet" href="src/css/style.css">
   <script src="src/js/libs/require.js" data-main="src/js/index.js"></script>
   <noscript><link href="src/img/svg/fallbacks/icons.fallback.css" rel="stylesheet"></noscript>
 </head>
