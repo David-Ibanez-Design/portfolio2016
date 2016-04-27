@@ -12,6 +12,13 @@
  *
  */
 
+ /* ------ libs --------*/
+
+@import "../css/libs/atelier-cave-light.css";
+@import "../css/libs/simplebar.css";
+
+/* ------ vendors --------*/
+
 @import "base/reset";
 @import "vendors/bourbon/bourbon";
 @import "vendors/susy/susy";
@@ -20,7 +27,7 @@
 /* ------ Settings --------*/
 
 @import "settings/config";
-@import "settings/font_jp";
+@import "settings/font";
 @import "settings/functions";
 @import "settings/mixins";
 @import "settings/helpers";

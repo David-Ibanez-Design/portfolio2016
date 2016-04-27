@@ -85,13 +85,9 @@ module.exports = function(grunt)
 		      separator: ';'
 
 	    },
-		    en_concat: {
-		      src: [ '../src/css/libs/*','../src/css/*.css'],
-		      dest: '../src/css/style_en.css.js'
-		    },
-		    jp_concat: {
-		      src: [ '../src/css/libs/*','../src/css/*.css'],
-		      dest: '../src/css/style_jp.css.js'
+		    dist: {
+		      src: [ '../src/css/libs/*','../src/css/style_uncropressed.css'],
+		      dest: '../src/css/style.css'
 		    }
 
 

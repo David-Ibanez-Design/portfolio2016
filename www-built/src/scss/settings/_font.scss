@@ -1,0 +1,37 @@
+/* ===========================
+   config : Global config
+   =========================== */
+
+
+// fonts list en
+
+// Montserrat
+@include font-face("Montserrat-bold", "../../src/fonts/Montserrat/Montserrat-Bold", $file-formats: ttf);
+@include font-face("Montserrat-regular", "../../src/fonts/Montserrat/Montserrat-Regular", $file-formats: ttf);
+
+// proximanova
+@include font-face("proximanova-black", "../../src/fonts/proxima/proximanova-black-webfont");
+@include font-face("proximanova-bold", "../../src/fonts/proxima/proximanova-bold-webfont");
+@include font-face("proximanova-regular", "../../src/fonts/proxima/proximanova-regular", $file-formats: ttf);
+@include font-face("proximanova-light", "../../src/fonts/proxima/proximanova-light-webfont");
+
+$font-family--primary--bold--en		: "Montserrat-bold", "Helevitica Neue" , Helvetica, Arial, sans-serif;
+$font-family--primary--regular--en	: "Montserrat-regular", "Helevitica Neue" , Helvetica, Arial, sans-serif;
+
+$font-family--secondary--black--en	: "proximanova-black" , Helvetica, Arial, sans-serif;
+$font-family--secondary--bold--en	: "proximanova-bold" , Helvetica, Arial, sans-serif;
+$font-family--secondary--regular--en	: "proximanova-regular" , Helvetica, Arial, sans-serif;
+$font-family--secondary--light--en	: "proximanova-light" , Helvetica, Arial, sans-serif;
+
+
+// fonts list jp
+
+$font-family--ja : "MS PGothic", Arial, "Hiragino Kaku Gothic ProN", "Osaka", sans-serif;
+
+
+$font-weight--light		: 300;
+$font-weight--medium	: 400;
+$font-weight--bold		: 700;
+$font-weight--x-bold	: 800;
+$font-weight--xx-bold	: 900;
+

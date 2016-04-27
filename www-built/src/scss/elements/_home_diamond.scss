@@ -90,7 +90,8 @@
 			font-size: 0.7em;
 			width: 70%;
 			margin:0 auto;
-			font-family: $font-family--primary--bold;
+	        &:lang(en){font-family: $font-family--primary--bold--en};
+	        &:lang(ja){font-family: $font-family--ja};
 			opacity: 0;
 			color:$white;
 			line-height: 18px;

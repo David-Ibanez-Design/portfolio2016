@@ -54,12 +54,19 @@ input:focus, textarea:focus{
 	}
 
 html,body{
-	font-family : $font-family--secondary--light;
 	font-weight : $font-weight--medium;
 	background: #f3f3f3;
 }
 
-h1 {
+html:lang(en), body:lang(en) {
+	font-family    : $font-family--secondary--light--en;
+}
+
+html:lang(ja), body:lang(ja){
+	font-family    : $font-family--ja;
+}
+
+h1{
 
 	@include adjust-font-size-to(80px);
 	@include xtablet {@include adjust-font-size-to(70px);}
@@ -68,9 +75,16 @@ h1 {
 	@include xsMobile {@include adjust-font-size-to(40px);}
 	@include xxsMobile {@include adjust-font-size-to(35px);}
 
-	font-family    : $font-family--primary--bold;
-
 }
+
+h1:lang(en){
+	font-family    : $font-family--primary--bold--en;
+}
+
+h1:lang(ja){
+	font-family    : $font-family--ja;
+}
+
 
 h2 {
 	@include adjust-font-size-to(24px);
@@ -78,11 +92,16 @@ h2 {
 	@include tablet {@include adjust-font-size-to(20px);}
 	@include mobile {@include adjust-font-size-to(20px);}
 	@include xsMobile {@include adjust-font-size-to(20px);}
-
-	font-family     : $font-family--secondary--bold;
-
-
 }
+
+h2:lang(en){
+	font-family    : $font-family--secondary--bold--en;
+}
+
+h2:lang(ja){
+	font-family    : $font-family--ja;
+}
+
 
 h3 {
 	@include adjust-font-size-to(21px);
@@ -90,28 +109,52 @@ h3 {
 	@include tablet {@include adjust-font-size-to(15px);}
 	@include mobile {@include adjust-font-size-to(14px);}
 	@include xsMobile {@include adjust-font-size-to(13px);}
+}
 
-	font-family     : $font-family--secondary--black;
+h3:lang(en){
+	font-family    : $font-family--secondary--black--en;
+}
+
+h3:lang(ja){
+	font-family    : $font-family--ja;
 }
 
 h4 {
 	@include adjust-font-size-to(16px);
-	font-family     : $font-family--secondary--bold;
+}
+
+h4:lang(en){
+	font-family    : $font-family--secondary--bold--en;
+}
+
+h4:lang(ja){
+	font-family    : $font-family--ja;
 }
 
 h5 {
 	@include adjust-font-size-to(14px);
-
-	font-family     : $font-family--secondary--bold;
-
-
 }
+
+h5:lang(en){
+	font-family    : $font-family--secondary--bold--en;
+}
+
+h5:lang(ja){
+	font-family    : $font-family--ja;
+}
+
 
 h6{
 	@include adjust-font-size-to(10px);
-
-	font-family     : $font-family--secondary--bold;
 	letter-spacing  : $letter-spacing;
+}
+
+h6:lang(en){
+	font-family    : $font-family--secondary--bold--en;
+}
+
+h6:lang(ja){
+	font-family    : $font-family--ja;
 }
 
 

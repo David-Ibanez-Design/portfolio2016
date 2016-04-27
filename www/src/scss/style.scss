@@ -12,6 +12,13 @@
  *
  */
 
+ /* ------ libs --------*/
+
+@import "../css/libs/atelier-cave-light.css";
+@import "../css/libs/simplebar.css";
+
+/* ------ vendors --------*/
+
 @import "base/reset";
 @import "vendors/bourbon/bourbon";
 @import "vendors/susy/susy";
@@ -28,8 +35,6 @@
 /* ------ Base --------*/
 
 @import "base/base";
-
-
 
 /* ------ Layout --------*/
 

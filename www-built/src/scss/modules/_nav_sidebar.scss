@@ -52,7 +52,8 @@
 	@include e(items-links) {
 
 			color:#5A5D63;
-			font-family: $font-family--secondary--bold;
+			&:lang(en){font-family: $font-family--secondary--bold--en};
+			&:lang(ja){font-family: $font-family--ja};
 			height: 100%;
     		font-size: 11px;
     		display: block;

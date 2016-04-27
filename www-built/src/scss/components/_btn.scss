@@ -137,7 +137,10 @@ $btn-styles : (
 	line-height: 33px;
 	color:#FFCFCF;
 	cursor: pointer;
-	font-family:$font-family--secondary--regular;
+
+	&:lang(en){font-family: $font-family--secondary--regular--en;}
+	&:lang(ja){font-family: $font-family--ja;}
+
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.38);
 
 	&:hover{
@@ -159,7 +162,8 @@ $btn-styles : (
 	text-align: center;
 	color:$white;;
 	cursor: pointer;
-	font-family:$font-family--secondary--bold;
+	&:lang(en){font-family: $font-family--secondary--bold--en;}
+	&:lang(ja){font-family: $font-family--ja;}
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.38);
 	margin:0 auto;
 	text-transform: uppercase;
@@ -176,7 +180,8 @@ $btn-styles : (
 
 .btn__dark{
 		color:$gold;
-		font-family:$font-family--secondary--regular;
+		&:lang(en){font-family: $font-family--secondary--regular--en;}
+		&:lang(ja){font-family: $font-family--ja;}
 		font-size:12px;
 		background:url(../img/btn-project-bg.png);
 		background-position:left bottom;
@@ -223,7 +228,8 @@ $btn-styles : (
 
 .btn__gray{
 	color:$gray--x-light;
-	font-family:$font-family--secondary--bold;
+	&:lang(en){font-family: $font-family--secondary--bold--en;}
+	&:lang(ja){font-family: $font-family--ja;}
 	font-size:12px;
 	background:$white;
 	float:left;

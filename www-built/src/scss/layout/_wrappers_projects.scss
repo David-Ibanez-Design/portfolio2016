@@ -66,10 +66,12 @@
 	    	text-align: center;
 	    	line-height: 14px;
 	    	font-size: 12px;
-	    	font-family: $font-family--secondary--regular;
 	    	transition:all $trns-duration;
-	    }
 
+		    &:lang(en){font-family: $font-family--secondary--regular--en;}
+		    &:lang(ja){font-family: $font-family--ja;}
+
+	    }
 	}
 
 
@@ -81,11 +83,13 @@
 	    background: url("../img/film-profile.jpg");
 	    width: 100%;
 		color:white;
-		font-family: $font-family--secondary--light;
 		font-size: 12px;
 		text-align: center;
 		line-height: 15px;
 		padding: 10px;
+
+		&:lang(en){font-family:$font-family--secondary--light--en;}
+	    &:lang(ja){font-family:$font-family--ja;}
 
 		p{
 			@include center-axis(both);

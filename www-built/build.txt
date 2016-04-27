@@ -28,5 +28,6 @@ src/js/modules/form.js
 src/js/works.js
 ----------------
 src/js/works.js
+src/js/libs/highlight.pack.js
 src/js/modules/sideBar.js
 src/js/modules/headerScroll.js

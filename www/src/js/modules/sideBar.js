@@ -1,4 +1,4 @@
-define(['jquery'], function($){
+define(['jquery', 'hightLight'], function($,hljs){
 
     (function(){
 
@@ -14,6 +14,7 @@ define(['jquery'], function($){
              this.bindEvent();
              this.creatLinkArray();
              this.docLoad();
+             this.loadPlugin();
           },
 
           cacheDom: function(){
@@ -70,6 +71,13 @@ define(['jquery'], function($){
               this.$wrapperNav.on('click', this.navigationClick);
               $(window).on('scroll', this.scrollToLink.bind(this));
             }
+
+          },
+
+
+          loadPlugin: function(){
+
+                hljs.initHighlightingOnLoad();
 
           },
 

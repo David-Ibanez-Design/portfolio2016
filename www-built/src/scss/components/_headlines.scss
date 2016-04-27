@@ -261,7 +261,7 @@
 
 		@include m(grouped) {
 			@extend %hdln-meduim;
-			color: cv($black, x-light);
+			color: rgba(105, 108, 113, 0.35);
 			text-transform: uppercase;
 			font-weight: $font-weight--bold;
 			@include trailer(0.2);

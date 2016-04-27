@@ -16,7 +16,8 @@
     text-indent: -52px;
     text-shadow: 1px 1px #ffffff;
     width: 3px;
-    font-family: $font-family--primary--regular;
+    &:lang(en){font-family: $font-family--primary--regular--en};
+    &:lang(ja){font-family: $font-family--ja};
     display:block;
 	@include susy-breakpoint(( $min-width, $xsMobile), $susy) {
 		display:none;
@@ -55,7 +56,7 @@
 	background: #fff none repeat scroll 0 0;
     border: 1px solid #e3edf3;
     border-radius: 2px;
-    font-family: $font-family--secondary--regular ,monospace,sans-serif;
+    font-family: $font-family--secondary--regular--en ,monospace,sans-serif;
 	font-size: 0.8em;
     font-style: italic;
     padding: 3px 9px;

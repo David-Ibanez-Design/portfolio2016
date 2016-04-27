@@ -25,7 +25,10 @@
 				@extend %lang__label;
 				border: 3px solid $black;
 				z-index: 2;
-				span{font-family: $font-family--primary--regular;}
+				span{
+					&:lang(en){font-family: $font-family--primary--regular--en};
+					&:lang(ja){font-family: $font-family--ja};
+				}
 
 				@include susy-breakpoint($susy-media-mobile, $susy) {
 					text-transform: uppercase;
@@ -90,7 +93,8 @@
 						  	a{
 								color:$white;
 								font-size:12px;
-								font-family: $font-family--primary--regular;
+								&:lang(en){font-family: $font-family--primary--regular--en};
+								&:lang(ja){font-family: $font-family--ja};
 								width:100%;
 								padding-top:5px;
 								padding-bottom:5px;

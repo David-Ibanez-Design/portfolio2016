@@ -61,7 +61,8 @@
 
 				a{
 					color:$white;
-					font-family: $font-family--primary--regular;
+					&:lang(en){font-family: $font-family--primary--regular--en};
+					&:lang(ja){font-family: $font-family--ja};
 					display: block;
 					padding-top: 10px 0 10px 0;
 					width: 100%;
@@ -134,7 +135,8 @@
 		 		font-size: 14px;
 		 		line-height: 35px;
 		 		height: 100%;
-		 		font-family:$font-family--secondary--regular;
+				&:lang(en){font-family: $font-family--secondary--regular--en};
+				&:lang(ja){font-family: $font-family--ja};
 		 		&:hover { color:$red !important; background:$white; text-indent: 60px; transition:all $trns-duration ;}
 		 	}
 
