@@ -1,0 +1,558 @@
+/* ======================
+   Layout/wrappers
+   ======================= */
+$wRef:1920px;
+$wBlock:($wRef/2)-20px;
+
+
+.inner-sideBard{
+	height: 100%;
+}
+
+
+.nav__projects{
+	@include susy-breakpoint($susy-media-mobile, $susy) {
+		position: fixed !important;
+		top: 4px !important;
+	}
+}
+
+
+.wrapper{
+
+// Multi pages wrappers
+
+	@include e(mobile-nav) {
+
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 50px;
+		z-index: 2;
+		@include susy-breakpoint($susy-media-mobile, $susy) {display: block;background: #212121;border-bottom: 1px solid #0e0e0e;}
+
+
+	 	@include m(project) {
+				@include susy-breakpoint($susy-media-mobile, $susy) {position:fixed !important;}
+	 	}
+
+	}
+
+	@include e(logo) {
+
+
+		@include m(index) {
+
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top:0;
+			left:0;
+			background-color: $red;
+			z-index: 51;
+
+			 @include susy-breakpoint($susy-media-mobile, $susy) {
+					height: 49px !important;
+				    left: 0 !important;
+				    top: 0 !important;
+				    width: 101px !important;
+				    margin-left: 0 !important;
+				    margin-top: 0 !important;
+			 }
+
+		}
+		@include m(visited) {
+
+			position: absolute;
+			height: 100px;
+			width: 100px;
+			top:50%;
+			left:50%;
+			margin-left:-50px;
+			margin-top:-50px;
+			background-color: $red;
+			z-index: 51;
+
+			 @include susy-breakpoint($susy-media-mobile, $susy) {
+					height: 49px !important;
+				    left: 0 !important;
+				    top: 0 !important;
+				    width: 101px !important;
+				    margin-left: 0 !important;
+				    margin-top: 0 !important;
+			 }
+
+		}
+
+		@include m(contact) {
+
+				position: absolute;
+				top:0px;
+				left:0px;
+				height: 80px;
+				width: 80px;
+				background: transparent;
+				z-index: 30;
+
+				 @include susy-breakpoint($susy-media-mobile, $susy) {
+						height: 49px;
+					    left: 0;
+					    top: 0;
+					    width: 101px;
+					    background: $red;
+				 }
+
+		}
+
+		@include m(project--mobile) {
+
+			display: none;
+				 @include susy-breakpoint($susy-media-mobile, $susy) {
+						height: 49px;
+					    left: 0;
+					    top: 0;
+					    width: 101px;
+					    background: $red;
+					    display: block;
+
+					    span{
+					    	top:9px;
+					    	margin: 0 auto !important
+					    }
+				 }
+
+		}
+		@include m(project) {
+
+			display: none;
+			height: 56px;
+		    left: -9px;
+		    top: 0;
+		    width: 100%;
+		    position: absolute;
+		    background: $red;
+			@include susy-breakpoint($susy-media-mobile, $susy) {display: block;}
+
+		}
+
+	}
+
+
+
+	@include e(lang) {
+
+
+		@include m(left) {
+
+				width: 72px;
+				@include susy-breakpoint($susy-media-desktop, $susy) {@include absolute(top 30px left span(1));}
+		}
+
+
+		@include m(right) {
+
+				width: 72px;
+				@include absolute(top 30px right 37%);
+				@include susy-breakpoint($susy-media-mobile, $susy) {@include absolute(top 14px left 100px);}
+
+		}
+
+
+
+		@include m(small) {
+
+				width: 72px;
+				@include absolute(top 20px left 100px);
+		}
+
+
+		@include m(projects) {
+
+				width: 72px;
+				@include absolute(top 26px left 119px);
+				@include susy-breakpoint($susy-media-mobile, $susy) {@include absolute(top 14px left 110px);}
+
+
+		}
+
+	}
+
+
+
+	@include e(menu) {
+
+		@include absolute(top 20px right 30px);
+		z-index: 50;
+		@include susy-breakpoint($susy-media-mobile, $susy) {
+			@include absolute(top 8px right 30px);
+
+			.navbar__label{
+				 font-size:0 !important;
+			}
+		}
+
+	}
+
+
+// Index wrappers
+
+	@include e(about) {
+
+		width: 65%;
+		@include center-both;
+		@include min-mobile {margin-left: 33px;}
+
+	}
+
+
+	 @include e(scroll-icon) {
+
+	    bottom: 26px;
+	    text-align: center;
+	    @include center-axis(x);
+
+	 }
+
+
+	 @include e(res-social) {
+
+		@include size(31px);
+		@include absolute(bottom 10px right 20px);
+		@include tablet {@include center-axis(x);bottom:20px;}
+
+	 }
+
+
+	 @include e(diamonds) {
+
+		width: 70%;
+		position: absolute;
+		@include tablet {position:relative;height:400px;margin:0 auto;width:600px}
+		@include mobile {height:percentage(700px/$wBlock);width:380px;}
+		@include xsMobile {width:250px;}
+		@include xxsMobile {width:163px;}
+
+	 }
+
+	 @include e(profile-photo) {
+
+		@include absolute(top 50% left -20px);
+		opacity: 0.86;
+		transform: translateY(-50%);
+		width: 200px;
+		@include mobile {display:none;}
+
+	 }
+
+
+
+// Projects wrappers
+
+
+	@include e(sideBar-logo) {
+
+		background: $black;
+	    display: block;
+	    margin: 0 auto;
+	    position: relative;
+	    left:0;
+	    height: 96px;
+
+	}
+
+	@include e(sideBar-elements) {
+
+		 @include susy-breakpoint($susy-media-mobile, $susy) {
+		 	    display: none;
+		}
+
+	}
+
+	@include e(sideBar-btn) {
+
+		width: 100%;
+		margin-top: 28px;
+
+	}
+
+
+    @include e(text_thumbs) {
+		display: block;
+		float: left;
+		position: relative;
+		margin-left: 16px;
+		width: 145px;
+		height: 100%;
+		line-height: 10px;
+		clear: none!important;
+	}
+
+	@include e(sideBar-UI) {
+
+	  	background: #000000 none repeat scroll 0 0;
+	    height: 26px;
+	    position: absolute;
+	    right: -1px;
+	    top: 50px;
+	    width: 30px;
+	    cursor: pointer;
+	    @include susy-breakpoint( ( $tablet, $mid-table ), $susy) {
+			display: none;
+		}
+
+	}
+
+
+	@include e(sideBar-nav) {
+		width: 100%;
+	}
+
+	@include e(currennt-project) {
+		background: url("../img/menu-sidebar-bg.jpg");
+	    display: block;
+	    height: 100px;
+	    position: relative;
+	    width: 100%;
+		color:white;
+		font-family: $font-family--secondary--light;
+		font-size: 12px;
+		text-align: center;
+		line-height: 15px;
+		padding: 10px;
+
+		p{
+			@include center-axis(both);
+		}
+	}
+
+
+	@include e(sideBar-profile) {
+
+		border: 1px solid $blue;
+	    height: 39px;
+	    margin: 172px auto 42px;
+	    transform: rotate(45deg);
+	    width: 39px;
+	    background: #19191f;
+
+	    @include susy-breakpoint( ( $tablet, $mid-table ), $susy) {
+			height:39px;
+			width:39px;
+		 }
+
+	}
+
+	@include e(projects-menu) {
+		position: absolute;
+		bottom: 0;
+		cursor: pointer;
+		height: 100px;
+		width: 100%;
+	}
+
+
+	@include e(sideBar-title) {
+
+		padding-left: 10px;
+		 @include susy-breakpoint( ( $tablet, $mid-table ), $susy) {
+			display: none;
+		 }
+
+	}
+
+
+ 	@include e(project-big-img) {
+
+		height: 440px;
+	    position: relative;
+	    width: 100%;
+	    z-index: 1;
+	    @include susy-breakpoint( ( $min-width, $tablet), $susy) {
+			 height: 510px;
+		}
+
+	 }
+
+
+	 @include e(project-logo) {
+
+	 	@include center-both();
+		width: 40%;
+
+		@include susy-breakpoint( ( $min-width, $xxsMobile), $susy) {
+			width: 80%;
+
+			.center-inline{
+				width: 70%;
+				margin: 0 auto;
+			}
+		}
+
+	 }
+
+
+
+	 @include e(btn-projects) {
+	 	margin-top:10px;
+
+	 	.btn__dark{
+	 		color:$gold;
+	 		font-family:$font-family--secondary--bold;
+	 		font-size:12px;
+	 		background:$black;
+	 		float:left;
+	 		cursor:pointer;
+	 		padding:4px 25px;
+	 		text-transform:uppercase;
+			@include susy-breakpoint( ( $min-width, $xsMobile), $susy) {
+				float:none;
+				margin:0 auto 10px;
+				width:157px;
+		 	}
+
+
+	 		&:hover{
+	 			background:$red;
+	 			color:$white;
+	 		}
+
+	 		&:hover span{
+	 			fill:$white;
+	 		}
+
+	 		span{
+	 			display:block;
+	 			float:left;
+	 			margin-right:7px;
+	 			height:auto;
+	 			width:29px;
+	 			fill:$gold;
+	 			margin-top: 2px;
+
+	 		}
+	 	}
+
+	 	.btn__gray{
+	 		color:$gray--x-light;
+	 		font-family:$font-family--secondary--bold;
+	 		font-size:12px;
+	 		background:$white;
+	 		float:left;
+	 		cursor:pointer;
+	 		margin-left:41px;
+	 		padding:4px 25px;
+	 		text-transform:uppercase;
+			@include susy-breakpoint( ( $min-width, $xsMobile), $susy) {
+				float:none;
+				margin:0 auto;
+				width:159px;
+		 	}
+
+	 		&:hover{
+	 			background:$white;
+	 			color:$gold;
+	 		}
+
+	 		&:hover span{
+	 			fill:$gold;
+	 		}
+
+
+		 		span{
+		 			display:block;
+		 			float:right;
+		 			margin-left:7px;
+		 			height:auto;
+		 			fill:$gray--x-light;
+		 			margin-top: 4px;
+
+		 		}
+	 	}
+
+
+	 }
+
+
+
+	 @include e(article) {
+
+	 	width: 1150px;
+		margin: 0 auto;
+		padding-top: 78px;
+		padding-bottom: 50px;
+		position:relative;
+		overflow: hidden;
+		@include susy-breakpoint( ( $min-width, $mid-table), $susy) {
+			    width: 90%;
+		 }
+
+	}
+
+	 @include e(article_inside) {
+
+	 	width: 100%;
+	 	background: $gray-white;
+
+	 }
+
+	 @include e(article-header) {
+		width: 1150px;
+		margin: 70px auto;
+		@include susy-breakpoint( ( $min-width, $mid-table), $susy) {
+			    width: 90%;
+			    margin: 30px auto 0;
+		 }
+	 }
+
+
+	 @include e(hdl-post-grouped) {
+
+		width: 100%;
+		height: 49px;
+		@include container(100% nest);
+
+	 }
+
+	 @include e(article-parts) {
+	 	clear: both;
+		@include padding-leader(1);
+
+		&>h4.hdl__SoustitreProject--grouped--dark{
+			font-size:1.1em !important;
+			@include trailer(0.2);
+		}
+
+	 }
+
+
+	 @include e(article-sous-title) {
+
+		float: left;
+		@include trailer(0.3);
+
+		.hdl__large--grouped{
+			margin-bottom: -0.1em !important;
+		}
+
+	 }
+
+
+// contact wrappers
+
+	 @include e(contact-info) {
+
+		 @include center-both;
+
+	 }
+
+	 @include e(form) {
+
+		 width: 54%;
+		 @include xtablet { width:70%;}
+		 @include center-both;
+
+	}
+
+
+}

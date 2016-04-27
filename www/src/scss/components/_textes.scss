@@ -1,0 +1,166 @@
+/* ==|====================
+   Module/text
+
+   Ici on  applique les styte de base qui est réutilisable via
+   un extends.
+   ensuite si l'ont à besion de créer un style spécifique on
+   ajoute seulement un modifieur qui prend la class de base +
+   les styles qui sont en plus mais sans avoir à supprimer de styles.
+   -- dans cette exemple on applique une marge différente.
+   ======================= */
+
+.para {
+
+
+	@include e(space) {
+		margin-top:9px;
+		display:block;
+	}
+
+
+	@include e(large) {
+
+		@include m(dark) {
+			@extend %para-large;
+			color: $gray--dark;
+			@include trailer(1);
+
+		}
+
+		@include m(light) {
+			@extend %para-large;
+			color: $blue--x-light;
+			@include trailer(1);
+		}
+
+
+
+	
+
+	}
+
+
+	@include e(meduim) {
+
+		@include m(dark) {
+			@extend %para-medium;
+			color: $gray;
+			@include trailer(1);
+			
+		}
+
+		@include m(light) {
+			@extend %para-medium;
+			color: $blue--x-light;
+			@include trailer(1);
+		}
+
+		@extend %para-medium;
+
+	}
+
+
+	@include e(xsmall) {
+
+		@include m(dark) {
+			@extend %para-xsmall;
+			color: $gray;
+			@include trailer(1);
+			text-shadow: 1px 1px $black;
+		}
+
+		@include m(light) {
+			@extend %para-xsmall;
+			color: $blue--light;
+			@include trailer(1);
+			text-shadow: 1px 1px $black;
+		}
+
+		@extend %para-small;
+
+	
+
+	}
+
+
+		@include e(small) {
+
+			@include m(dark) {
+				@extend %para-small;
+				color: $black;
+				@include trailer(1);
+				text-shadow: 1px 1px $black;
+			}
+
+			@include m(light) {
+				@extend %para-small;
+				color: $white;
+				@include trailer(1);
+				text-shadow: 1px 1px $black;
+			}
+
+
+
+		@extend %para-small;
+
+	
+
+	}
+
+
+	@include e(intro) {
+
+		@include m(dark) {
+			@extend %para-intro;
+			color: $gray;
+			line-height: 28px;
+			font-size: 18px;
+			margin-bottom:40px;
+		}
+
+		@include m(light) {
+			@extend %para-intro;
+			color: $blue--x-light;
+			margin-bottom:40px;
+		}
+
+		
+
+	}
+
+
+
+	@include e(legende) {
+
+		@include m(dark) {
+			@extend %para-small;
+			color: cv($gray, light);
+			font-style: italic;
+			@include leader(0.2);
+			text-align: center;
+			line-height: 27px;
+		}
+
+		@include m(light) {
+			@extend %para-small;
+			color: $blue--x-light;
+			font-style: italic;
+			@include leader(0.2);
+			text-align: center;
+			line-height: 27px;
+		}
+
+		
+
+	}
+
+
+	
+
+
+}
+
+
+.closer{
+	line-height: 1.5em;
+}

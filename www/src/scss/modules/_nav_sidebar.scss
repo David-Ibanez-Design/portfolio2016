@@ -1,0 +1,92 @@
+// SideBar menu projects
+
+.sideBar-nav{
+
+	@include e(items) {
+
+		position: relative;
+		width: 100%;
+		height: 110px;
+
+			&:first-child .sideBar-nav__title{
+				border-top: none;
+			}
+
+			 &:hover{
+			 	.sideBar-nav__items-links{color:$white;}
+			 	.sideBar-nav__icon{fill:$white;}
+	    	}
+
+		@include m(current) {
+
+			background: #212125;
+
+				.current-sideBar{
+					width:2px;
+					height: 73%;
+					background:$red;
+					position: absolute;
+					@include center-axis(y);
+					box-shadow: 3px 0px 11px $red;
+				}
+
+				.sideBar-nav__title .sideBar-nav__icon , .sideBar-nav__title a{fill:$white !important;color: $white;}
+				.sideBar-nav__triangle-select{display: block;}
+		}
+
+	}
+
+
+	@include e(triangle-select) {
+
+		@include shape(triangle, 7px, #212125);
+		@include center-axis(y);
+		right:-12px !important;
+		transform: rotate(90deg);
+		display: none;
+		margin-top: -9px;
+
+	}
+
+
+	@include e(items-links) {
+
+			color:#5A5D63;
+			font-family: $font-family--secondary--bold;
+			height: 100%;
+    		font-size: 11px;
+    		display: block;
+    		text-align: center;
+    		line-height: 14px;
+    		transition:all $trns-duration;
+
+	}
+
+
+	@include e(title) {
+		display: block;
+		width: 73%;
+		height:100%;
+		margin:0 auto;
+		cursor: pointer;
+		padding-top: 27px;
+		overflow: hidden;
+		border-top: 1px solid rgba(35, 45, 58, 0.67);
+	    text-shadow:1px 1px 1px $black;
+	}
+
+
+	@include e(icon) {
+	    display: block;
+	    margin: 0 auto;
+	    height: auto;
+	    width: 24px;
+	    fill: #5A5D63;
+	    filter: drop-shadow( 1px 1px 1px $black);
+
+	}
+
+}
+
+
+

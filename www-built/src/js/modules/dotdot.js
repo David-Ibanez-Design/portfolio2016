@@ -1,0 +1,1 @@
+define(["jquery","libdotdot"],function(i,o){function t(){i(window).width()<680&&i(window).height()<310?i(".ellipsis").dotdotdot({watch:"window",height:70}):i(".ellipsis").dotdotdot({watch:"window",height:170})}t(),i(window).on("resize",function(){t()})});

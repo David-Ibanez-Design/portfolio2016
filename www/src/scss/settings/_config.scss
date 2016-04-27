@@ -1,0 +1,262 @@
+/* ===========================
+   config : Global config
+   =========================== */
+
+
+// fonts list
+
+@include font-face("Montserrat-bold", "../../src/fonts/Montserrat/Montserrat-Bold", $file-formats: ttf);
+@include font-face("Montserrat-regular", "../../src/fonts/Montserrat/Montserrat-Regular", $file-formats: ttf);
+
+@include font-face("proximanova-black", "../../src/fonts/proxima/proximanova-black-webfont");
+@include font-face("proximanova-bold", "../../src/fonts/proxima/proximanova-bold-webfont");
+@include font-face("proximanova-regular", "../../src/fonts/proxima/proximanova-regular", $file-formats: ttf);
+@include font-face("proximanova-light", "../../src/fonts/proxima/proximanova-light-webfont");
+
+$font-family--primary--bold : "Montserrat-bold", "Helevitica Neue" , Helvetica, Arial, sans-serif;
+$font-family--primary--regular : "Montserrat-regular", "Helevitica Neue" , Helvetica, Arial, sans-serif;
+
+$font-family--secondary--black : "proximanova-black" , Helvetica, Arial, sans-serif;
+$font-family--secondary--bold : "proximanova-bold" , Helvetica, Arial, sans-serif;
+$font-family--secondary--regular : "proximanova-regular" , Helvetica, Arial, sans-serif;
+$font-family--secondary--light : "proximanova-light" , Helvetica, Arial, sans-serif;
+
+// font weight (ici ne pas utiliser les police italique les définir dans le css)
+
+$font-weight--light			: 300;
+$font-weight--medium		: 400;
+$font-weight--bold			: 700;
+$font-weight--x-bold	  : 800;
+$font-weight--xx-bold   : 900;
+
+// base color (http://chir.ag/projects/name-that-color)
+
+$white         : #fff;
+$gray-white    : #f3f3f3;
+$black         : #0b0b0b;
+$gray--xdark    : #696c71;
+$gray--dark    : #141414;
+$gray          : #333333;
+$gray--light   : #7e7878;
+$gray--x-light : rgba(131, 139, 150, 0.36);
+$gray--xx-light : rgba(214, 215, 215, 0.14);
+$green         : #1cb097;
+$green--light  : #21bda9;
+
+$red           : #cb2027;
+
+$yellow        : #cbc520;
+
+$gold          : #959455;
+
+$blue--x-dark  : #010b14;   // bg
+$blue--dark    : #3b4d61;   // icons
+$blue          : #3e4b5e;   // border
+$blue--light   : #838b96;   // text
+$blue--x-light : #cbd0d4;   // Big title
+
+
+// color usage
+
+$color-primary    : $black;
+$color-secondary  : $white;
+$color-accent     : $red;
+
+
+// colors map
+
+$base-colors : (
+
+  white         : $white,
+  green         : $green,
+  green--ligh   : $green--light,
+  black         : $black,
+  gray          : $gray,
+  gray--light   : $gray--light ,
+  gray--x-light : $gray--x-light,
+  red           : $red ,
+  yellow        : $yellow,
+  gold          : $gold,
+  blue--x-dark  : $blue--x-dark,
+  blue--dar     : $blue--dark,
+  blue          : $blue,
+  blue--light   : $blue--light,
+  blue--x-light : $blue--x-light
+
+
+);
+
+// color classes creation from style map
+
+
+@each $colourName, $colour in $base-colors {
+
+    .text-#{$colourName}
+    {
+        color: $colour;
+    }
+
+    .bg-#{$colourName}
+    {
+        background: $colour;
+    }
+}
+
+
+// colors variation map
+
+$variations: (
+ x-light:
+    (
+      function: lighten,
+      parameters: 70%
+    ),
+  light:
+    (
+      function: lighten,
+      parameters: 15%
+    ),
+
+  dark:
+    (
+      function: darken,
+      parameters: 10%
+    ),
+
+   x-dark:
+    (
+      function: darken,
+      parameters: 30%
+    ),
+
+  fade:
+
+    (
+      function: rgba,
+      parameters: .3
+    ),
+
+  shade:
+
+    (
+      function: mix,
+      parameters: white 30%
+    ),
+
+
+);
+
+
+
+
+// font-size map
+
+$base-font-size : (
+
+    xx-bold : $font-weight--xx-bold,
+    x-bold  : $font-weight--x-bold,
+    bold    : $font-weight--bold,
+    meduim  : $font-weight--medium ,
+    light   :  $font-weight--medium
+
+);
+
+
+// font-weight map
+
+$base-font-weight : (
+
+    xx-large : 80px,
+    x-large  : 24px,
+    large    : 18px,
+    meduim   : 16px,
+    small    : 14px,
+    x-small  : 10px
+
+);
+
+
+// UI colors map
+
+$ui-colors : (
+
+	default : $white,
+	success : $green,
+	error   : $red,
+	warning : $yellow,
+	info    : $blue
+
+);
+
+
+// text
+
+$base-font-size   : 19px;
+$base-line-height : 32px;
+$letter-spacing    : 1px;
+@include establish-baseline($base-font-size);
+
+
+// Border radius
+
+$br--default     : .4em;
+$br--round       : 50%;
+
+
+// Transitions
+
+$trns-duration   : .3s;
+
+
+// Path to assets
+
+$path--rel : "../img";
+
+
+// grid
+
+
+
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  container: 100%,
+  container-position: center,
+  columns: 2,
+  gutters: 0,
+  column-width: false,
+  last-flow: to,
+  global Box Sizing: border-box,
+
+);
+
+$susy-small: (
+  gutter-position: split,
+  container: 100%,
+  columns: 8,
+  gutters: 1,
+);
+
+
+$xx-desktop : 2000px;
+$xtablet    : 1540px;
+$mid-table  : 1390px;
+$tablet     : 1040px;
+$mobile     : 780px;
+$xsMobile   : 615px;
+$xxsMobile  : 430px;
+$min-width  : 1px;
+
+
+$susy-media-xdesktop :( $xtablet, 1920px);
+$susy-media-sdesktop :( $mobile, $xtablet);
+$susy-media-smobile :( $min-width, $mobile);
+$susy-media-xsmobile :( $min-width, $xsMobile);
+$susy-media-xxsmobile :( $min-width, $xxsMobile);
+
+$susy-media-desktop  :( $tablet );
+$susy-media-mobile   :( $min-width, $tablet);
+
+$susy-media-mob-tab :( $xsMobile , $tablet);

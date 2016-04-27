@@ -1,0 +1,243 @@
+
+
+/////////////////////// Projects wrappers
+
+.wrapper{
+
+// sidebar wrappers
+
+	@include e(sidebar) {
+
+		height: 100%;
+
+	}
+
+	@include e(back-top) {
+		width: 70px;
+		height: 70px;
+		background: url(../img/back-to-top-bg.png);
+		position: fixed;
+		display: none;
+		bottom: 0;
+		right: 9px;
+		cursor: pointer;
+
+		&:hover svg{
+			fill:$red;
+			transition:all $trns-duration;
+			top: 55%;
+		}
+	}
+
+	@include e(sideBar-elements) {
+
+		 @include susy-breakpoint($susy-media-mobile, $susy) {
+		 	    display: none;
+		}
+
+	}
+
+	@include e(sideBar-logo) {
+
+		background: $black;
+	    display: block;
+	    margin: 0 auto;
+	    position: relative;
+	    left:0;
+	    height: 96px;
+
+	    &:hover span{
+			fill:$black !important;
+	    }
+	    &:hover p{
+			opacity: 1;
+			transition:all 1s;
+	    }
+
+	    p{
+	    	opacity: 0;
+	    	width: 80%;
+    		position: absolute;
+		    top: 32%;
+		    left: 50%;
+	    	color:$white;
+	    	transform: translate(-50%, -50%);
+	    	padding-top: 30px;
+	    	text-align: center;
+	    	line-height: 14px;
+	    	font-size: 12px;
+	    	font-family: $font-family--secondary--regular;
+	    	transition:all $trns-duration;
+	    }
+
+	}
+
+
+
+	@include e(sidebar-currennt-project) {
+	    display: block;
+	    height: 100px;
+	    position: relative;
+	    background: url("../img/film-profile.jpg");
+	    width: 100%;
+		color:white;
+		font-family: $font-family--secondary--light;
+		font-size: 12px;
+		text-align: center;
+		line-height: 15px;
+		padding: 10px;
+
+		p{
+			@include center-axis(both);
+		}
+	}
+
+
+	@include e(sidebar-portail) {background: url("../img/film-profile.jpg")};
+	@include e(sidebar-film) {background: url("../img/menu-sidebar-bg.jpg")};
+	@include e(sidebar-elsa) {background: url("../img/menu-sidebar-bg.jpg")};
+	@include e(sidebar-osis) {background: url("../img/menu-sidebar-bg.jpg")};
+	@include e(sidebar-lsp) {background: url("../img/menu-sidebar-bg.jpg")};
+	@include e(sidebar-isucare) {background: url("../img/menu-sidebar-bg.jpg")};
+	@include e(sidebar-portfolio) {background: url("../img/menu-sidebar-bg.jpg")};
+
+
+	@include e(sideBar-nav) {
+
+		width: 100%;
+
+	}
+
+
+	@include e(sidebar-projects-nav) {
+
+		position: absolute;
+		bottom: 0;
+		cursor: pointer;
+		height: 100px;
+		width: 100%;
+	}
+
+
+    @include e(text_thumbs) {
+
+		display: block;
+		float: left;
+		position: relative;
+		margin-left: 16px;
+		width: 145px;
+		height: 100%;
+		line-height: 10px;
+		clear: none!important;
+
+	}
+
+
+
+
+// article Header wrappers
+
+	 @include e(article-header) {
+		width: 1150px;
+		margin: 70px auto;
+		@include susy-breakpoint( ( $min-width, $mid-table), $susy) {
+			    width: 90%;
+			    margin: 30px auto 0;
+		 }
+	 }
+
+ 	@include e(article-header-img) {
+
+		height: 440px;
+	    position: relative;
+	    width: 100%;
+	    z-index: 1;
+
+	 }
+
+	 @include e(article-header-logo) {
+
+	 	@include center-both();
+		width: 40%;
+
+		@include susy-breakpoint( ( $min-width, $xxsMobile), $susy) {
+			width: 80%;
+
+			.center-inline{
+				width: 70%;
+				margin: 0 auto;
+			}
+		}
+
+	 }
+
+
+	 @include e(btn-projects) {
+
+	 	margin-top:10px;
+
+	 }
+
+
+// article wrappers
+
+	 @include e(article) {
+
+	 	width: 1150px;
+		margin: 0 auto;
+		padding-top: 78px;
+		padding-bottom: 50px;
+		position:relative;
+		overflow: hidden;
+		@include susy-breakpoint( ( $min-width, $mid-table), $susy) {
+			    width: 90%;
+		 }
+		@include tablet {
+			overflow: visible;
+		}
+
+	}
+
+	 @include e(article_inside) {
+
+	 	width: 100%;
+	 	background: $gray-white;
+
+	 }
+
+
+	 @include e(article-parts) {
+	 	clear: both;
+		@include padding-leader(1);
+
+		&>h4.hdl__SoustitreProject--grouped--dark{
+			font-size:1em !important;
+
+		}
+
+	 }
+
+
+	 @include e(article-hdl-grouped) {
+
+		width: 100%;
+		height: 49px;
+		@include container(100% nest);
+
+	 }
+
+
+
+	 @include e(article-sous-title) {
+
+		float: left;
+		@include trailer(0.3);
+
+		.hdl__large--grouped{
+			margin-bottom: -0.1em !important;
+		}
+
+	 }
+
+
+}

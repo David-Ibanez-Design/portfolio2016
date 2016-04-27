@@ -1,0 +1,201 @@
+/* ==|====================
+   Module/Nav
+
+   Exemple d'utilisation de BEM avec un Menu.
+   l'élément block (nav) et stylisé de façon à ce
+   qu'il soit indépendant du reste de la page.
+   les éléments (item) à l'intérieur de nav sont eux dépendant
+   du block auquel ils appartienent.
+   l'élément modifier (current) viens modifier un style
+   par exemple couleur ou bordure.
+
+   ======================= */
+
+.lang{
+
+	    height:41px;
+	    z-index: 4;
+	    cursor:pointer;
+	    position:relative;
+	    width:27px;
+	    margin: 0 auto;
+
+
+			@include e(label) {
+				@extend %lang__label;
+				border: 3px solid $black;
+				z-index: 2;
+				span{font-family: $font-family--primary--regular;}
+
+				@include susy-breakpoint($susy-media-mobile, $susy) {
+					text-transform: uppercase;
+				}
+
+	        }
+
+
+			@include e(icon) {
+				@include absolute(top 4px left 4px);
+				// @extend %lang-span;
+				width: 13px;
+				opacity: 0;
+
+
+				@include m(white){
+					fill: $white;
+					opacity: 1 !important;
+					@include susy-breakpoint(($min-width, $tablet), $susy) {
+					   @include absolute(top 4px left 8px);
+					 }
+				}
+
+			}
+
+
+			@include e(selected) {
+				@include transform(rotate(45deg));
+				font-size	: 12px;
+				display		: block;
+				line-height	: 21px;
+				margin-left	: 3px;
+				text-align	: center;
+
+					@include m(projects){color:$white;}
+
+			}
+
+
+			@include e(dropdown) {
+					@include center-axis(x);
+					@include absolute(top -25px);
+					background-color:$black;
+					display: none;
+					padding: 40px 11px 9px;
+
+
+					@include m(items) {
+
+						text-align:center;
+						position:relative;
+						width:50px;
+						margin-bottom: 5px;
+						margin-top: 5px;
+						height: 40px;
+
+						&:first-child{
+							margin-top: 20px;
+						}
+
+
+						  	a{
+								color:$white;
+								font-size:12px;
+								font-family: $font-family--primary--regular;
+								width:100%;
+								padding-top:5px;
+								padding-bottom:5px;
+								display:block;
+								text-transform: uppercase;
+								&:hover{color: $red;}
+
+						    }
+
+					}
+			}
+
+		@include e(items) {
+
+			@include m(white) {
+					.lang__label{border: 3px solid $white;}
+
+					.lang__icon{fill:$white;}
+
+				     .lang__icon--white{fill: $black;}
+
+					.lang__dropdown{
+						background:$white;
+						@include m(items) {
+								a{
+									color:$black;
+									&:hover{color: $red;}
+								}
+						}
+					}
+			}
+
+
+		}
+
+
+}
+
+
+.wrapper__lang--left{
+
+	@include susy-breakpoint($susy-media-mobile, $susy) {
+		@include absolute(top 14px left 100px);
+
+			.lang__label{
+				border-width: 0 !important;
+
+				&:hover{
+					border-width: 0 !important;
+				}
+			}
+	}
+}
+
+
+.wrapper__lang--right{
+
+	@include susy-breakpoint($susy-media-mobile, $susy) {
+
+		.lang__label{
+			border-width: 0 !important;
+
+			&:hover{
+				border-width: 0 !important;
+			}
+		}
+	}
+}
+
+
+.wrapper__lang--small{
+
+	@include susy-breakpoint($susy-media-mobile, $susy) {
+			@include absolute(top 4px left 91px);
+
+			.lang__label{
+				border-width: 0 !important;
+
+				&:hover{
+					border-width: 0 !important;
+				}
+			}
+	}
+
+}
+
+.wrapper__lang--projects{
+
+	@include susy-breakpoint($susy-media-mobile, $susy) {
+		position:fixed !important;
+		z-index: 10;
+
+			.lang__label{
+				border-width: 0 !important;
+
+				&:hover{
+					border-width: 0 !important;
+				}
+			}
+	}
+
+}
+
+
+.lang__items--white{
+	.lang__label{border: 3px solid $white;}
+
+}

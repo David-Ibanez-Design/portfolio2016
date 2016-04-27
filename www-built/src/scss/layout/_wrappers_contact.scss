@@ -1,0 +1,24 @@
+.wrapper{
+
+// contact wrappers
+
+	 @include e(contact-info) {
+
+		 @include center-both;
+
+	 }
+
+	 @include e(form) {
+
+		 width: 54%;
+		 @include center-both;
+		 @include xtablet { width:70%;}
+		 @include susy-breakpoint($susy-media-xsmobile, $susy) {
+			width: 85%;
+		 }
+
+
+
+	}
+
+}

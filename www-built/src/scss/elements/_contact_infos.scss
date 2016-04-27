@@ -1,0 +1,113 @@
+/* ======================
+   Module/contactInfos
+   ======================= */
+
+
+.contact__info-line{
+	height:160px;
+	@include span(1 of 8);
+
+	.contact-info-line{
+		width:2px;
+		height: 100%;
+		background: white;
+	}
+}
+
+.contact__info-icons{
+	@include span(2 of 8);
+	padding-right:20px;
+	padding-top: 19px;
+
+}
+
+.contact__info-text{
+	@include span(5 of 8);
+	padding:20px 0 0 20px;
+	color: $white;
+	font-family: $font-family--primary--regular;
+
+
+	ul:nth-child(1){
+
+		li{
+
+			@include susy-breakpoint($susy-media-xdesktop) {
+				@include adjust-font-size-to(16px);
+			 }
+
+			@include susy-breakpoint($susy-media-sdesktop) {
+				@include adjust-font-size-to(14px);
+			 }
+
+			 @include susy-breakpoint($susy-media-smobile) {
+				@include adjust-font-size-to(12px);
+			 }
+
+		}
+
+		li:nth-child(2){
+			margin-top: 14px;
+		}
+	}
+
+	ul:nth-child(2){
+
+		margin-top: 13px;
+
+		li{
+
+			float:left;
+			margin-right:20px;
+
+		}
+		a{
+			fill:$white;
+			width: 28px;
+			display: block;
+			height: auto;
+			transition: all $trns-duration;
+			float: left;
+    		margin-right: 10px;
+
+			&.icon-pinterest{
+				width: 23px;
+				margin-top: 1px;
+				.st1{
+					fill:black;
+				}
+
+
+				@include susy-breakpoint($susy-media-sdesktop) {
+					width: 18px;
+					margin-top: 0px;
+				 }
+
+				 @include susy-breakpoint($susy-media-smobile) {
+					width: 16px;
+					margin-top: 0px;
+				 }
+			}
+
+			 @include susy-breakpoint($susy-media-xdesktop) {
+				width: 25px;
+			 }
+
+			@include susy-breakpoint($susy-media-sdesktop) {
+				width: 20px;
+			 }
+
+			 @include susy-breakpoint($susy-media-smobile) {
+				width: 18px;
+			 }
+
+			cursor:pointer;
+			&:hover{fill:$gold;}
+		}
+
+
+	}
+
+
+}
+

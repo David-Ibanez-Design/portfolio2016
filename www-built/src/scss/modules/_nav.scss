@@ -1,0 +1,183 @@
+/* ==|====================
+   Module/Nav
+
+   Exemple d'utilisation de BEM avec un Menu.
+   l'élément block (nav) et stylisé de façon à ce
+   qu'il soit indépendant du reste de la page.
+   les éléments (item) à l'intérieur de nav sont eux dépendant
+   du block auquel ils appartienent.
+   l'élément modifier (current) viens modifier un style
+   par exemple couleur ou bordure.
+
+   ======================= */
+
+// Menu desktop
+.nav{
+
+		height: 41px;
+		width: 82px;
+		position: relative;
+		cursor: pointer;
+		&:hover > li > * {color:$red;fill:$red;}
+
+
+		@include e(label) {
+			@extend %nav__label;color:$black;
+			@include susy-breakpoint($susy-media-xxsmobile, $susy) {
+				text-indent: 100%;
+			    white-space: nowrap;
+			    overflow: hidden;
+			}
+
+			span{
+				float: right;
+				margin-top: -7px;
+				@include susy-breakpoint($susy-media-xxsmobile, $susy) {
+					margin-top: -26px;
+				}
+
+			}
+		}
+
+		@include e(dropdown) {
+
+			background: $black;
+		    display: none;
+		    padding: 30px 55px 60px 40px;
+		    @include absolute(top -20px right -30px);
+		    width: 324px;
+		    z-index: 5;
+
+			@include e(items) {
+
+			    position: relative;
+			    text-align: left;
+			    line-height: 61px;
+			    font-size: 17px;
+			    border-bottom: 1px solid $gray--x-light;
+			    &:nth-child(1){padding-bottom: 62px;}
+
+			    &>a{text-transform: uppercase;}
+
+				a{
+					color:$white;
+					font-family: $font-family--primary--regular;
+					display: block;
+					padding-top: 10px 0 10px 0;
+					width: 100%;
+				}
+
+			    &>a:hover { color:$red; background:$white; text-indent: 20px; transition:all $trns-duration ;}
+				&>a:hover span.nav__moreIcon span{background: $black;  transition:all $trns-duration ;}
+				&>a:hover span.nav__moreIcon{margin-right: 20px;  transition:all $trns-duration ;}
+
+
+			}
+
+
+		}
+
+	@include e(closeIcon) {
+
+		position: absolute;
+		right:0;
+		fill: $white;
+		height: auto;
+		width: 22px;
+		transform-origin:center center;
+		transition:all $trns-duration;
+		&:hover {fill:$red;transform: scale(1.3);}
+	}
+
+
+    @include e(moreIcon) {
+
+    	float: right;
+    	display:block;
+    	position: relative;
+    	height: 20px;
+    	width: 20px;
+    	margin-top: 20px;
+
+
+	    	span.line-horizontal{
+				height: 1px;
+				width: 20px;
+				position: absolute;
+				top:9px;
+				left:0;
+				background: $white;
+	    	}
+
+			span.line-vertical{
+				width: 1px;
+				height: 20px;
+				position: absolute;
+				top:0;
+				left:9px;
+				background: $white;
+	    	}
+
+    	}
+
+
+	@include e(sousMenu) {
+
+		display:none;
+		padding-bottom: 8px;
+
+	 	@include e(items ) {
+	 		text-indent: 40px;
+			height: 35px;
+
+		 	a{
+		 		font-size: 14px;
+		 		line-height: 35px;
+		 		height: 100%;
+		 		font-family:$font-family--secondary--regular;
+		 		&:hover { color:$red !important; background:$white; text-indent: 60px; transition:all $trns-duration ;}
+		 	}
+
+		 }
+
+
+	}
+
+
+}
+
+
+// Menu variante white
+
+.nav__wrapper--white{
+
+	.nav__label{
+		color:$white;
+		fill:$white;
+	}
+
+	.nav__dropdown{
+		background: $white;
+
+		li {
+			a{color:$black;}
+			span{fill: $black; &:hover {fill:$red;}}
+		}
+
+		&>li>a:hover { background:$gray--xx-light;color:$red;}
+
+		.nav__moreIcon
+		{
+		    span{background: $black;}
+		}
+
+    }
+}
+
+
+
+
+
+
+
+

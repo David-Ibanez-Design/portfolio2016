@@ -1,0 +1,265 @@
+/* ==|====================
+   Module/Button
+   ======================= */
+
+// Style btn
+
+$btn-styles : (
+
+  size : (
+    xx-large : 350px,
+    x-large  : 300px,
+    large    : 246px,
+    meduim   : 138px,
+    small    : 100px,
+    x-small  : 60px
+    ),
+
+  color    : (
+    light    : $white,
+    dark     : $black,
+    blue     : $blue,
+    red     : $red,
+    green   : $green,
+
+  ),
+
+  font-size:    (
+    xx-large : 25px,
+    x-large  : 20px,
+    large    : 16px,
+    meduim   : 11px,
+    small    : 10px,
+    x-small  : 9px,
+
+  ),
+
+  style:    (
+    uppercase  : uppercase,
+    lowercase  : lowercase,
+    capitalize : capitalize
+
+  )
+
+
+);
+
+
+// Buttons btn__type--size --color
+.btn {
+
+@extend %btn;
+
+	&__rounded{
+		@extend %btn;
+
+			@each $item, $map in $btn-styles {
+				@each $key in map-keys($map) {
+					@if $item == 'size'
+					{
+						&--#{$key}
+						{
+							font-size:palette(font-size, $key);
+
+							@extend %btn;
+						}
+					}
+				}
+			}
+
+
+
+
+
+	}
+
+
+	&__square{
+
+		@extend %btn;
+			@each $item, $map in $btn-styles {
+			@each $key in map-keys($map) {
+					@if $item == 'size'
+					{
+						&--#{$key}
+						{
+							font-size:palette(font-size, $key);
+							@extend %btn;
+
+							span{
+								margin-left: 10px;
+								line-height: 1;
+							}
+						}
+					}
+				}
+			}
+
+
+	}
+
+
+
+	&__squareFull{
+
+		@extend %btn-full;
+			@each $item, $map in $btn-styles {
+			@each $key in map-keys($map) {
+					@if $item == 'size'
+					{
+						&--#{$key}
+						{
+							font-size:palette(font-size, $key);
+							@extend %btn-full;
+
+							span{
+								margin-left: 10px;
+								line-height: 1;
+							}
+						}
+					}
+				}
+			}
+
+
+	}
+
+
+}
+
+
+.btn__shadows{
+	background: url(../img/btn-home-bg.png) left bottom;
+	height: 40px;
+	width: 110px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 33px;
+	color:#FFCFCF;
+	cursor: pointer;
+	font-family:$font-family--secondary--regular;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.38);
+
+	&:hover{
+
+		color:$white;
+	}
+
+	&:active{
+		background-position: left top;
+	}
+}
+
+
+.btn__shadows-contact{
+	background: url(../img/btn-contact-bg.png) left bottom;
+	height: 62px;
+	width: 244px;
+	font-size: 22px;
+	text-align: center;
+	color:$white;;
+	cursor: pointer;
+	font-family:$font-family--secondary--bold;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.38);
+	margin:0 auto;
+	text-transform: uppercase;
+
+
+	&:active{
+
+		background-position: left top;
+	}
+}
+
+
+
+
+.btn__dark{
+		color:$gold;
+		font-family:$font-family--secondary--regular;
+		font-size:12px;
+		background:url(../img/btn-project-bg.png);
+		background-position:left bottom;
+		float:left;
+		cursor:pointer;
+		padding:4px 25px;
+		text-transform:uppercase;
+		width: 152px;
+		height: 47px;
+
+		@include susy-breakpoint( ( $min-width, $xsMobile), $susy) {
+			float:none;
+			margin:0 auto 10px;
+			display: block;
+ 		}
+
+
+		&:hover{
+			background-position:left top;
+			color:$white;
+		}
+
+		&:hover span{
+			fill:$white;
+		}
+
+		span{
+			display:block;
+			float:left;
+			margin-right:7px;
+			height:auto;
+			width:29px;
+			fill:$gold;
+			margin-top: 2px;
+
+		}
+
+		.icon-double-arrow{
+			width:14px !important;
+			transform: rotate(-90deg);
+			margin-top: 0px;
+		}
+}
+
+.btn__gray{
+	color:$gray--x-light;
+	font-family:$font-family--secondary--bold;
+	font-size:12px;
+	background:$white;
+	float:left;
+	cursor:pointer;
+	margin-left:41px;
+	padding:4px 25px;
+	text-transform:uppercase;
+	@include susy-breakpoint( ( $min-width, $xsMobile), $susy) {
+		float:none;
+		margin:0 auto;
+		display: block;
+		width: 179px;
+ 	}
+
+	&:hover{
+		background:$white;
+		color:$gold;
+		transition:all $trns-duration;
+	}
+
+	&:hover span{
+		fill:$gold;
+	}
+
+
+		span{
+			display:block;
+			float:right;
+			margin-left:7px;
+			height:auto;
+			fill:$gray--x-light;
+			margin-top: 4px;
+
+		}
+}
+
+
+
+
