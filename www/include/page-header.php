@@ -1,7 +1,7 @@
 <?php
   include_once 'lang/common.php';
   include_once("include/analyticstracking.php");
-  $currentPage = ucwords( str_ireplace(array('-', '.php'), array(' ', ''), basename($_SERVER['PHP_SELF']) ) );
+  $currentPage = str_ireplace(array('-', '.php'), array(' ', ''), basename($_SERVER['PHP_SELF']) );
 ?>
 
       <!DOCTYPE html>
