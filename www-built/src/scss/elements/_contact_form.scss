@@ -1,0 +1,169 @@
+/* ======================
+   Module/fomrContact
+   ======================= */
+
+////FORM ELEMENTS ////
+
+.form{
+
+	clear: both;
+
+	@include e(result) {
+
+		 @include susy-breakpoint($susy-media-mobile, $susy) {
+			@include leader(1.6);
+		 }
+
+		 @include susy-breakpoint($susy-media-desktop, $susy) {
+			@include trailer(1.6);
+		}
+
+		h1.error{color: $red !important;}
+		h1.success{color: $green !important;}
+	}
+
+	@include e(wrapper) {
+		clear: both;
+		  height: 46px;
+		  display: block;
+		  position: relative;
+		  padding-right:33px;
+		  margin-bottom: 60px;
+
+		  &.is_focused .form__label  { color: $green; top: -7px;left:0;font-size: 14px;}
+		  &.is_populated .form__label{ color:$gray--light; top: -7px;left:0;font-size: 14px;}
+
+		  &.has-error .form__input { background: img-path(invalid) scroll transparent no-repeat  98% center !important;}
+		  &.is-valid .form__input{ background: img-path(valid) scroll transparent no-repeat  98% center !important; }
+
+		  @include xtablet { padding-right:0;}
+	}
+
+
+	@include e(label) {
+		  color: #c9c9c9;
+		  @include absolute(top 14px);
+		  z-index: 3;
+		  font-style: italic;
+	      &:lang(en){font-family: $font-family--primary--regular--en};
+	      &:lang(ja){font-family: $font-family--ja};
+		  text-shadow: 1px 1px 1px white;
+		  @include transition( all 0.05s linear );
+	}
+
+
+	@include e(input) {
+		  @extend %form-input;
+		  line-height: 26px;
+		  padding: 20px 34px 0 0;
+		  background: transparent;
+	}
+
+
+
+	@include e(textarea) {
+		  @extend %form-input;
+		  resize: none;
+		  overflow-y: hidden;
+		  height: 49px;
+		  line-height: 46px;
+		  z-index:3;
+		  position:relative;
+		  padding: 10px 34px 0 0;
+	}
+
+
+	@include e(envoyer) {
+		// @extend %center;
+		line-height: 14px;
+
+
+
+		@include m(submitting) {
+
+			cursor: auto;
+			// @extend %center;
+		}
+
+
+
+		@include m(error) {
+			background-position: left top;
+			height: 60px;
+			text-indent: -999px;
+			// @extend %center;
+		}
+
+
+		@include m(success) {
+			background: url(../img/btn-contact-bg-sucess.png);
+			height: 60px;
+			text-indent: -999px;
+			// @extend %center;
+		}
+
+
+	}
+
+
+
+	@include e(icon) {
+
+		@include center-axis(x);
+
+		  	@include m(success) {
+				width: 32px;
+				height: 32px;
+				background: url(../img/valid-btn.png);
+				margin-top: -51px;
+				display: block;
+
+		  	}
+
+		  	@include m(error) {
+				width: 32px;
+				height: 32px;
+				background: url(../img/cross.png);
+				margin-top: -49px;
+				display: block;
+		  	}
+
+	}
+
+
+
+	.has-error .form__errorMessage {
+	    color: $red;
+	    font-style: italic;
+	    &:lang(en){font-family: $font-family--primary--regular--en};
+	    &:lang(ja){font-family: $font-family--ja};
+	    font-size: 12px;
+
+
+
+    }
+
+    .form__errorMessage{
+    	display: none;
+    }
+
+    @include e(errorMessage) {color: #f3f3f3;}
+
+
+
+
+    @include e(antispam) {@extend .hidden;}
+
+
+
+}
+
+
+
+.textarea_is_foused{
+      line-height: 23px !important;
+      padding-top: 23px !important;
+}
+
+
+

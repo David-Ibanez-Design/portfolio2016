@@ -1,0 +1,215 @@
+/* ===========================
+   Base
+
+   Ici on donner des styles par defaut aux elements qui
+   seront utiliser sur tout le site
+   =========================== */
+
+
+html {
+  box-sizing: border-box;
+}
+
+:-moz-submit-invalid,invalid, :-moz-ui-invalid,.form__input:valid,input,.form__input:focus:invalid  {
+	  box-shadow: none;
+	}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+   outline: 0;
+}
+
+.float-left{
+	float:left !important;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.webpage{
+
+	transition: all 1s ease-out;
+}
+
+.webpage-blur{
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  -ms-filter: blur(8px);
+  filter: blur(8px);
+}
+
+.cross-cursor{
+	cursor:url(../img/close_cv.png), auto;
+}
+
+input:focus, textarea:focus{
+	outline:none;
+	}
+
+html,body{
+	font-weight : $font-weight--medium;
+	background: #f3f3f3;
+}
+
+html:lang(en), body:lang(en) {
+	font-family    : $font-family--secondary--light--en;
+}
+
+html:lang(ja), body:lang(ja){
+	font-family    : $font-family--ja;
+}
+
+h1{
+
+	@include adjust-font-size-to(80px);
+	@include xtablet {@include adjust-font-size-to(70px);}
+	@include tablet {@include adjust-font-size-to(60px);}
+	@include mobile {@include adjust-font-size-to(50px);}
+	@include xsMobile {@include adjust-font-size-to(40px);}
+	@include xxsMobile {@include adjust-font-size-to(35px);}
+
+}
+
+h1:lang(en){
+	font-family    : $font-family--primary--bold--en;
+}
+
+h1:lang(ja){
+	font-family    : $font-family--ja;
+}
+
+
+h2 {
+	@include adjust-font-size-to(24px);
+	@include xtablet {@include adjust-font-size-to(20px);}
+	@include tablet {@include adjust-font-size-to(20px);}
+	@include mobile {@include adjust-font-size-to(20px);}
+	@include xsMobile {@include adjust-font-size-to(20px);}
+}
+
+h2:lang(en){
+	font-family    : $font-family--secondary--bold--en;
+}
+
+h2:lang(ja){
+	font-family    : $font-family--ja;
+}
+
+
+h3 {
+	@include adjust-font-size-to(21px);
+	@include xtablet {@include adjust-font-size-to(20px);}
+	@include tablet {@include adjust-font-size-to(15px);}
+	@include mobile {@include adjust-font-size-to(14px);}
+	@include xsMobile {@include adjust-font-size-to(13px);}
+}
+
+h3:lang(en){
+	font-family    : $font-family--secondary--black--en;
+}
+
+h3:lang(ja){
+	font-family    : $font-family--ja;
+}
+
+h4 {
+	@include adjust-font-size-to(16px);
+}
+
+h4:lang(en){
+	font-family    : $font-family--secondary--bold--en;
+}
+
+h4:lang(ja){
+	font-family    : $font-family--ja;
+}
+
+h5 {
+	@include adjust-font-size-to(14px);
+}
+
+h5:lang(en){
+	font-family    : $font-family--secondary--bold--en;
+}
+
+h5:lang(ja){
+	font-family    : $font-family--ja;
+}
+
+
+h6{
+	@include adjust-font-size-to(10px);
+	letter-spacing  : $letter-spacing;
+}
+
+h6:lang(en){
+	font-family    : $font-family--secondary--bold--en;
+}
+
+h6:lang(ja){
+	font-family    : $font-family--ja;
+}
+
+
+a {
+	text-decoration : none;
+	font-weight     : $font-weight--medium;
+	}
+
+p {
+	@extend %para;
+	//display: inline-block; // alow para to stack margin
+}
+
+blockquote {
+	font-size   : em(24px);
+	font-style  : italic;
+	font-weight : $font-weight--light;
+	margin      : em(32px, 24px) 0;
+	padding     : 0 0 0 5%;
+
+}
+
+// Lists
+
+ul,
+li {
+	margin          : 0;
+	padding         : 0;
+	list-style-type : none;
+}
+
+// Form elements
+
+input,
+textarea {
+	display : block;
+	outline : 0;
+	border  : 0;
+}
+
+
+// Button
+
+button {
+	outline: 0;
+}
+
+img{
+	max-width: none !important;
+}
+
+b{
+	font-weight: 600;
+	font-weight: 600;
+    font-size: 17px;
+    color: black;
+}
+

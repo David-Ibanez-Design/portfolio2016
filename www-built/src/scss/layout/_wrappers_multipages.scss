@@ -1,0 +1,157 @@
+.wrapper{
+
+
+// Multi pages wrappers
+
+	@include e(mobile-nav) {
+
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 50px;
+		z-index: 40;
+		@include susy-breakpoint($susy-media-mobile, $susy) {display: block;background: #212121;border-bottom: 1px solid #0e0e0e;}
+
+
+
+	 	@include m(project) {
+				@include susy-breakpoint($susy-media-mobile, $susy) {position:fixed !important;}
+	 	}
+
+	 	.logo-portfolio{
+	 		display: none;
+	 		position: relative;
+
+			 @include susy-breakpoint($susy-media-mobile, $susy) {
+					display: block;
+					height: 100%;
+					width: 100px;
+					background-color: $red;
+			 }
+		 }
+
+	}
+
+	@include e(logo) {
+
+
+
+
+		@include m(index) {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top:0;
+			left:0;
+			background-color: $red;
+			z-index: 51;
+			@include susy-breakpoint($susy-media-mobile, $susy) {
+				display: none;
+		 	}
+		}
+
+		@include m(visited) {
+
+			position: absolute;
+			height: 100px;
+			width: 100px;
+			top:50%;
+			left:50%;
+			margin-left:-50px;
+			margin-top:-50px;
+			background-color: $red;
+			z-index: 51;
+			@include susy-breakpoint($susy-media-mobile, $susy) {
+				display: none;
+		 	}
+		}
+
+		@include m(contact) {
+
+				position: absolute;
+				top:0px;
+				left:0px;
+				height: 80px;
+				width: 80px;
+				background: transparent;
+				z-index: 50;
+			@include susy-breakpoint($susy-media-mobile, $susy) {
+				display: none;
+		 	}
+		}
+
+		@include m(project) {
+
+			display: none;
+			height: 56px;
+		    left: -9px;
+		    top: 0;
+		    width: 100%;
+		    position: absolute;
+		    background: $red;
+			@include susy-breakpoint($susy-media-mobile, $susy) {
+				display: none;
+		 	}
+		}
+
+	}
+
+
+
+	@include e(lang) {
+
+
+		@include m(left) {
+
+				width: 72px;
+				@include susy-breakpoint($susy-media-desktop, $susy) {@include absolute(top 30px left 49.9%);}
+		}
+
+
+		@include m(right) {
+
+				width: 72px;
+				@include absolute(top 30px right 37%);
+				@include susy-breakpoint($susy-media-mobile, $susy) {@include absolute(top 14px left 100px);}
+
+		}
+
+
+
+		@include m(small) {
+
+				width: 72px;
+				@include absolute(top 20px left 100px);
+		}
+
+
+		@include m(projects) {
+
+				width: 72px;
+				@include absolute(top 26px left 119px);
+				@include susy-breakpoint($susy-media-mobile, $susy) {@include absolute(top 14px left 110px);}
+
+
+		}
+
+	}
+
+
+
+	@include e(menu) {
+
+		@include absolute(top 20px right 30px);
+		z-index: 50;
+		@include susy-breakpoint($susy-media-mobile, $susy) {
+			@include absolute(top 8px right 9px);
+
+			.navbar__label{
+				 font-size:0 !important;
+			}
+		}
+
+	}
+
+
+}

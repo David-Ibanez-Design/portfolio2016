@@ -1,0 +1,99 @@
+$wRef:1920px;
+$wBlock:($wRef/2)-20px;
+
+.wrapper{
+
+
+
+// Index wrappers
+
+
+
+	@include e(about) {
+
+		width: 65%;
+		@include center-both;
+		@include min-mobile {margin-left: 33px;}
+		@include susy-breakpoint($susy-media-mobile, $susy) {
+			margin: 130px auto;
+			width: 85%;
+			position: relative;
+			transform:none;
+			left:auto;
+			top:auto;
+	 	}
+
+
+	}
+
+	 @include e(aplat) {
+
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+		z-index: 95;
+		background: $black;
+		opacity: 0;
+		opacity: 0;
+		display: none;
+	 }
+	 @include e(box-cv) {
+
+		width: 1000px;
+	  	left: 50%;
+	    position: absolute;
+	    top: 70%;
+	    transform: translate(-50%, -50%);
+		z-index: 99;
+		opacity: 0;
+		display: none;
+		overflow-y: hidden;
+		height: 90%;
+			img{
+				width: 100%;
+			}
+
+		@include susy-breakpoint($susy-media-mobile, $susy) { width: 800px;}
+		@include susy-breakpoint($susy-media-mobile, $susy) { width: 100%}
+	 }
+
+	 @include e(scroll-icon) {
+
+	    bottom: 26px;
+	    text-align: center;
+	    @include center-axis(x);
+
+	 }
+
+
+	 @include e(res-social) {
+		width: 110px;
+		@include absolute(bottom 9px right 8px);
+		@include tablet {@include center-axis(x);bottom:20px;}
+
+	 }
+
+
+	 @include e(diamonds) {
+
+		width: 70%;
+		position: absolute;
+		@include tablet {position:relative;height:400px;margin:0 auto;width:600px}
+		@include mobile {height:percentage(700px/$wBlock);width:380px;}
+		@include xsMobile {width:250px;}
+		@include xxsMobile {width:163px;}
+
+	 }
+
+	 @include e(profile-photo) {
+
+		@include absolute(top 50% left -20px);
+		opacity: 0.86;
+		transform: translateY(-50%);
+		width: 200px;
+		@include susy-breakpoint($susy-media-mobile, $susy) {display:none;}
+
+	 }
+
+
+}

@@ -1,0 +1,444 @@
+/* ======================
+   Layout/Grid
+   ======================= */
+
+// containers
+.container-home{
+	@include susy-breakpoint($susy-media-mobile, $susy) {
+		height: auto;
+	}
+}
+
+
+.grid{
+
+	@include e(container) {
+
+		 @include container(100% nest);
+		 height: 100vh;
+		 padding:10px;
+		 background: #19191f;
+		 // background-image: repeating-linear-gradient(
+			//   45deg,
+			//   #19191f,
+			//   #19191f 10px,
+			//   #121216  10px,
+			//   #121216 11px
+			// );
+
+		 @include susy-breakpoint($susy-media-mobile, $susy) {
+		 	padding-bottom: 0;
+
+		 }
+	}
+
+	@include e(container--contact) {
+
+		 @include susy-breakpoint($susy-media-mobile, $susy) {
+		 	height: auto;
+		 }
+	}
+
+	@include e(container--projects) {
+
+		 background:#19191f  !important;
+		 padding-left:0px !important;
+		 height: auto;
+
+		 @include susy-breakpoint($susy-media-mobile, $susy) {
+		 	padding-left:5px !important;
+		 }
+	}
+
+
+
+	// grid home
+
+	@include e(home--left) {
+
+		 height: 100%;
+		 @include span(50% of 2);
+		 background: url(../img/bg-about.png)top right no-repeat;
+		 @include susy-breakpoint($susy-media-mobile, $susy) {
+			 @include span(2);
+			 background: transparent;
+			 height: auto;
+		 }
+		 position: relative;
+
+	}
+
+	@include e(home--right) {
+
+		 @include span(50% of 2);
+		 	 @include susy-breakpoint($susy-media-mobile, $susy) {
+			 @include span(2);
+		 }
+		@include mobile {height:1024px;}
+		@include xsMobile {height:1240px;}
+		@include xxsMobile {height:650px;}
+		 position: relative;
+		 //background: $gray-white;
+		 background:url(../img/pattern-white.jpg);
+		 overflow: hidden;
+		 height:100%;
+
+	}
+
+
+
+
+	// grid contact
+
+	@include e(contact--left) {
+
+		 height: 100%;
+		 @include span(63%);
+		  @include susy-breakpoint($susy-media-mobile, $susy) {
+			 @include span(2);
+		 }
+		  @include susy-breakpoint($susy-media-mobile, $susy) {
+			height: 920px;
+		 }
+		 position: relative;
+		 background: $gray-white;
+
+	}
+
+
+
+	@include e(contact--right) {
+
+		 height: 100%;
+		 @include span(37%);
+		 @include susy-breakpoint($susy-media-mobile, $susy) {
+			 	@include span(2);
+			 	height: 200px;
+		 }
+		 position: relative;
+	}
+
+
+
+	@include e(form--filed) {
+
+		@include span(1 of 2);
+		@include susy-breakpoint($susy-media-mobile, $susy) {
+			@include span(2);
+		 }
+		float: left;
+	}
+
+
+	@include e(contact--image) {
+
+		height: 50%;
+		width: 100%;
+		overflow: hidden;
+		@include susy-breakpoint($susy-media-mobile, $susy) {
+			display: none;
+		 }
+
+	}
+
+
+	@include e(contact--infos) {
+
+		height: 50%;
+		@include susy-breakpoint($susy-media-mobile, $susy) {
+			height: 100%;
+		 }
+
+		width: 100%;
+		position:relative;
+	}
+
+
+
+
+	// grid project
+
+
+	@include e(img-project) {
+
+		@include span(65%);
+		margin: 52px auto 71px;
+		float:none;
+
+		img{
+			width:100%;
+			margin:0 auto;
+			display:block;
+		}
+
+	}
+
+	@include e(img-project-small) {
+
+		@include span(50%);
+		margin: 52px auto 71px;
+		float:none;
+
+		@include susy-breakpoint( ( $min-width, $mid-table ), $susy) {
+			width:500px;
+			float:none;
+		}
+
+		@include susy-breakpoint( ( $min-width, $mobile ), $susy) {
+			width:300px;
+			float:none;
+		}
+
+		img{
+			width:100%;
+			margin:0 auto;
+			display:block;
+		}
+
+
+	}
+
+	@include e(project--left) {
+
+		 margin-top: -10px;
+		 height: 100%;
+		 width: 117px;
+		 background: #19191f;
+		 position: fixed;
+		 z-index: 99;
+
+		 @include susy-breakpoint( ( $tablet, $mid-table ), $susy) {width: 115px;}
+		 @include susy-breakpoint( ( $min-width, $tablet), $susy) {display: none;}
+	}
+
+	@include e(project--right) {
+
+		  width: 93.8%;
+		 position: relative;
+		 background: $white;
+		 float: right;
+
+		 @include susy-breakpoint( ( $tablet, $mid-table ), $susy) {
+			width: 93.9%;
+		 }
+
+		 @include susy-breakpoint( ( $min-width, $tablet), $susy) {
+			 @include span(100%);
+			 width: 100%;
+			 float: none;
+		 }
+	}
+
+	@include e(img-project--full) {
+
+		@include span(100%);
+		float: none;
+		position: relative;
+		background: $gray-white;
+		@include leader(1);
+		@include trailer(2);
+
+		img{
+			max-width:100%;
+			height:auto;
+			margin:0 auto;
+			display:block;
+
+			 @include susy-breakpoint( ( $min-width, $mid-table), $susy) {
+				width: 100%;
+			 }
+		}
+	}
+
+	@include e(project-sunnary) {
+
+		@include span(50%);
+		float:left;
+
+		 @include susy-breakpoint( ( $min-width, $mid-table), $susy) {
+			    clear: both;
+	    		margin: 0 auto 159px;
+	    		float:none;
+	    		width:90%;
+		 }
+		 	@include susy-breakpoint( ( $min-width, $xsMobile), $susy) {
+	    		margin: 0 auto 0;
+		 }
+
+		 	@include susy-breakpoint( ( $min-width, $xxsMobile), $susy) {
+
+		 }
+	}
+
+	@include e(project-inbrowser) {
+
+		@include span(40%);
+		float:right;
+		position: relative;
+		height: 459px;
+		img{
+			width: 100% !important;
+			position: absolute;
+			bottom:0;
+		}
+
+		@include susy-breakpoint( ( $min-width, $mid-table), $susy) {
+			    height: 459px;
+	    		clear: both;
+	    		margin: 0 auto;
+	    		float:none;
+	    		width: 460px;
+		 }
+
+		 	@include susy-breakpoint( ( $min-width, $xsMobile), $susy) {
+	    		width: 400px;
+		 }
+
+		 	@include susy-breakpoint( ( $min-width, $xxsMobile), $susy) {
+	    		width: 100%;
+	    		height: 400px;
+		 }
+
+	}
+
+
+	@include e(inbrowser-wide) {
+
+	 	@include span(50%);
+
+	 	@include susy-breakpoint( ( $min-width, $mid-table), $susy) {
+	    	width: 660px;
+		 	float:none;
+		    clear: both;
+		    margin: 0 auto;
+	 	}
+
+		@include susy-breakpoint( ( $min-width, $xsMobile), $susy) {
+	    		width: 400px;
+	    		height: 269px;
+		}
+
+		@include susy-breakpoint( ( $min-width, $xxsMobile), $susy) {
+	    		width: 100%;
+		}
+
+	}
+
+	@include e(article-header) {
+
+			width: 100%;
+			background: white;
+			// height: 100%;
+	    	overflow: hidden;
+	    	border-bottom: 1px solid #E0E0E0;
+	}
+
+	@include e(article-text) {
+
+			.wrapper__article-hdl-grouped,
+			.para__large--dark,
+			h4.hdl__SoustitreProject--grouped--dark,
+			 .conclusion{
+			 	width: 80%;
+				margin-left:auto;
+				margin-right:auto;
+				clear:both;
+
+				@include tablet {
+					width: 90%;
+				}
+
+				@include susy-breakpoint(( $min-width, $xsMobile), $susy) {
+					width: 100%;
+				}
+			}
+			.para__large--dark,
+			h4.hdl__SoustitreProject--grouped--dark,
+			 .conclusion{
+
+				@include susy-breakpoint(( $min-width, $xsMobile), $susy) {
+					width: 100%;
+				}
+			 }
+
+	}
+
+
+	@include e(img-project--FloatL) {
+
+		 @include span(5.5 of 12 first);
+		 position: relative;
+		 @include susy-breakpoint( ( $min-width, $tablet), $susy) {
+			 @include span(100%);
+			 float: none;
+			 text-align:center;
+
+
+			 img{
+			 	 display:block;
+			 	 margin: 0 auto;
+
+			 	 	@include susy-breakpoint( ( $min-width, $xsMobile), $susy) {
+						width: 100%;
+				 	}
+			 }
+
+
+		 }
+
+		@include leader(1);
+		@include trailer(2);
+
+	    	img{
+	    		max-width:100%;height:auto;
+	    	}
+	}
+
+	@include e(img-project--FloatR) {
+		 position: relative;
+		 @include span(5.5 of 12 last);
+		 text-align:center;
+
+		 @include susy-breakpoint( ( $min-width, $tablet), $susy) {
+			 @include span(100%);
+			 float: none;
+
+			 img{
+			 	 display:block;
+			 	 margin: 0 auto;
+			 	 @include susy-breakpoint( ( $min-width, $xsMobile), $susy) {
+						width: 100%;
+				 }
+			 }
+		 }
+
+		@include leader(1);
+		@include trailer(2);
+
+	    	img{
+	    		max-width:100%;height:auto;
+	    	}
+	}
+
+
+	@include e(title--line) {
+
+		height: 100%;
+		@include span(0.3 of 12 first);
+		@include susy-breakpoint( ( $min-width, $xsMobile), $susy) {
+			display: none;
+	 	}
+	}
+
+	@include e(title--grouped) {
+
+		@include span(11.7 of 12 last);
+		@include susy-breakpoint( ( $min-width, $xsMobile), $susy) {
+			@include span(12 of 12 first);
+	 	}
+	}
+
+
+}
+
+

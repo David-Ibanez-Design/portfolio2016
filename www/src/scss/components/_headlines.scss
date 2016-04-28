@@ -1,0 +1,399 @@
+/* ==|====================
+   Module/headlines
+
+   Ici on  applique les styte de base qui est réutilisable via
+   un extends.
+   ensuite si l'ont à besion de créer un style spécifique on
+   ajoute seulement un modifieur qui prend la class de base +
+   les styles qui sont en plus mais sans avoir à supprimer de styles.
+   -- dans cette exemple on applique une marge différente.
+   ======================= */
+
+
+// $hdl-styles : (
+
+
+// 		size: (
+
+// 				xlarge : trailer(1/4),
+// 				large : '',
+// 				meduim : '',
+// 				small : trailer(-1/2),
+// 				xsmal : ''
+
+// 				),
+
+// 		colors: (
+
+// 			white : $white,
+// 			black : $black,
+// 			red : $red
+
+// 			),
+// 				);
+
+
+
+
+
+// .hdl-hero{
+
+
+// 	@each $size in el($hdl-styles, size) {
+
+// 		&__#{$size}
+// 			{
+// 				@extend %hdln-#{$size};
+
+// 				@each $color in el($hdl-styles, colors) {
+
+// 					&--#{$color}
+// 					{
+// 						color: $color;
+//  						text-shadow: 1px 1px invert($color);
+// 						@extend %hdln-#{$size};
+// 						@if $size == xlarge {
+// 							@include trailer(1/4)
+// 									}
+// 						@else if $size == small {
+// 							@include trailer(-1/2);
+// 									}
+
+
+// 								&--grouped
+// 								{
+// 									@extend %hdln-#{$size};
+// 									color: $color;
+//  									text-shadow: 1px 1px invert($color);
+// 									@include leader(0);
+// 								    @include trailer(0.1);
+// 								}
+
+
+// 					}
+
+// 			}
+// 		}
+// 	}
+
+
+// }
+
+
+
+
+// Buttons hdl__type--color
+
+.hdl {
+
+	@include e(xxlarge)  {
+
+		@include m(dark) {
+			@extend %hdln-xxlarge;
+			color: $black;
+			text-shadow: 1px 1px #ffffff;
+			@include trailer(1/4)
+		}
+
+		@include m(light) {
+			@extend %hdln-xxlarge;
+			color: $white;
+			text-shadow: 1px 1px #000000;
+			@include trailer(1/4)
+		}
+
+		@include m(grouped) {
+					text-shadow: 1px 1px #000000;
+					@extend %hdln-xxlarge;
+					color: $black;
+					text-shadow: 1px 1px #ffffff;
+
+
+						@include m(light) {
+							@extend %hdln-xxlarge;
+							color: $white;
+							text-shadow: 1px 1px #000000;
+
+						}
+
+
+						@include m(dark) {
+							color: $black;
+							text-shadow: 1px 1px #ffffff;
+							@include leader(-0.1);
+
+						}
+
+				}
+
+
+
+
+
+				@extend %hdln-xxlarge;
+	}
+
+
+@include e(xslarge)  {
+
+
+		@include m(dark) {
+			@extend %hdln-xslarge;
+			color: $black;
+			text-shadow: 1px 1px #ffffff;
+			@include trailer(1);
+		}
+
+		@include m(light) {
+			@extend %hdln-xslarge;
+			color: $white;
+			text-shadow: 1px 1px #000000;
+			@include trailer(1)
+		}
+
+		@include m(grouped) {
+			@extend %hdln-xslarge;
+			text-shadow: 1px 1px #ffffff;
+
+
+				@include m(dark) {
+					@extend %hdln-xslarge;
+					color: $black;
+					text-shadow: 1px 1px #ffffff;
+					@include leader(0);
+					@include trailer(0.2);
+				}
+
+				@include m(light) {
+					@extend %hdln-xslarge;
+					color: $white;
+					text-shadow: 1px 1px #000000;
+					@include leader(0.2);
+					@include trailer(0.5);
+
+				}
+
+
+
+		}
+		@extend %hdln-xlarge ;
+	}
+
+
+	@include e(xlarge)  {
+
+
+		@include m(dark) {
+			@extend %hdln-xlarge;
+			color: $black;
+			text-shadow: 1px 1px #ffffff;
+			@include trailer(1);
+		}
+
+		@include m(light) {
+			@extend %hdln-xlarge;
+			color: $white;
+			text-shadow: 1px 1px #000000;
+			@include trailer(1)
+		}
+
+		@include m(grouped) {
+			@extend %hdln-xlarge;
+			text-shadow: 1px 1px #ffffff;
+
+
+				@include m(dark) {
+					@extend %hdln-xlarge;
+					color: $black;
+					text-shadow: 1px 1px #ffffff;
+					@include leader(0);
+					@include trailer(0.2);
+				}
+
+				@include m(light) {
+					@extend %hdln-xlarge;
+					color: $white;
+					text-shadow: 1px 1px #000000;
+					@include leader(0.2);
+					@include trailer(0.5);
+
+				}
+
+
+
+		}
+		@extend %hdln-xlarge ;
+	}
+
+
+	@include e(SoustitreProject) {
+		@extend %hdl-sous-titre-project;
+
+		@include m(grouped) {
+			@extend %hdl-sous-titre-project;
+			color: cv($black, x-light);
+			text-transform: uppercase;
+			@include trailer(0.2);
+
+
+				@include m(dark) {
+					clear:both;
+					@extend %hdl-sous-titre-project;
+					color: $black;
+					text-shadow: 1px 1px #ffffff;
+					@include trailer(0.5);
+				}
+
+				@include m(light) {
+					@extend %hdl-sous-titre-project;
+					color: $white;
+					text-shadow: 1px 1px #000000;
+					@include trailer(0.5);
+				}
+
+
+		}
+
+	}
+
+
+	@include e(large)  {
+
+		@include m(grouped) {
+			@extend %hdln-meduim;
+			color: rgba(105, 108, 113, 0.35);
+			text-transform: uppercase;
+			font-weight: $font-weight--bold;
+			@include trailer(0.2);
+
+
+				@include m(dark) {
+					@extend %hdln-large;
+					color: $black;
+					text-shadow: 1px 1px #ffffff;
+					@include trailer(0.5);
+				}
+
+				@include m(light) {
+					@extend %hdln-large;
+					color: $white;
+					text-shadow: 1px 1px #000000;
+					@include trailer(0.5);
+				}
+
+
+		}
+
+		@include m(dark) {
+				@extend %hdln-large;
+				color: $black;
+				text-shadow: 1px 1px #ffffff;
+				@include leader(2);
+				@include trailer(0.5);
+			}
+
+			@include m(light) {
+				@extend %hdln-large;
+				color: $white;
+				text-shadow: 1px 1px #000000;
+				@include leader(2);
+				@include trailer(0.5);
+			}
+
+		@extend %hdln-large;
+	}
+
+
+
+
+	@include e(meduim)  {
+
+		@include m(grouped) {
+			@extend %hdln-meduim;
+			color: $gray--light;
+			text-transform: uppercase;
+
+		}
+
+		@include m(dark) {
+				@extend %hdln-meduim;
+				color: $black;
+				text-shadow: 1px 1px #ffffff;
+				@include leader(0);
+				@include trailer(0.2);
+			}
+
+			@include m(light) {
+				@extend %hdln-meduim;
+				color: $white;
+				text-shadow: 1px 1px #000000;
+				@include leader(0);
+				@include trailer(0.4);
+			}
+
+		@extend %hdln-meduim;
+	}
+
+
+
+
+
+
+
+	@include e(small)  {
+
+		@include m(dark) {
+			@extend %hdln-small;
+			color: $blue--x-dark;
+			text-shadow: 1px 1px $blue--x-light;
+			text-transform: uppercase;
+			@include trailer(-0.7);
+
+		}
+
+		@include m(light) {
+			@extend %hdln-small;
+			color: $blue--x-light;
+			text-shadow: 1px 1px $blue--x-dark;
+			text-transform: uppercase;
+			@include trailer(-0.7);
+		}
+
+		@extend %hdln-small;
+
+	}
+
+
+
+
+	@include e(xsmall)  {
+
+		@include m(gold) {
+			@extend %hdln-xsmall;
+			color: $gold;
+		}
+
+		@extend %hdln-xsmall;
+	}
+
+
+
+
+
+
+}
+
+.hdl__soustitre-home{
+	font-size:1.3em;
+	line-height: 1.4em;
+	color:#cccccc;
+    margin-top: -6px !important;
+    margin-bottom: 24px;
+    @include xsMobile {@include adjust-font-size-to(20px);}
+}
+
+.lh__soustitre{
+	font-size:1em;
+	line-height: 1.4em;
+	margin-top: 0 !important;
+}

@@ -1,0 +1,1651 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"c",
+				"cv-en.jpg	w:1000 h:1415"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"dis",
+				"displaySucess"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"sr",
+				"script	Tag"
+			],
+			[
+				"scroll",
+				"scrollBar"
+			],
+			[
+				"ve",
+				"vendors/"
+			],
+			[
+				"w",
+				"window"
+			],
+			[
+				"di",
+				"diamonds"
+			],
+			[
+				"pro",
+				"profile"
+			],
+			[
+				"e",
+				"$el〔variable〕"
+			],
+			[
+				"t",
+				"trns-duration	 _wrappers.scss"
+			],
+			[
+				"re",
+				"removeClass〔function〕"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"bor",
+				"border-width"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"cu",
+				"cur	cursor: ${pointer};"
+			],
+			[
+				"tra",
+				"transform"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"back",
+				"backgroundColor"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"icon-c",
+				"icon-close	 icons.fallback.css"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"tr",
+				"transform-origin"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"in",
+				"inherit"
+			],
+			[
+				"tex-",
+				"text-indent"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"box-",
+				"box-shadow"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"cen",
+				"center-axis($axis: \"both\", $posTop: 50%)	 _mixins.scss"
+			],
+			[
+				"t-s",
+				"t-esc"
+			],
+			[
+				"o",
+				"opacity"
+			],
+			[
+				"ra",
+				"ratio"
+			],
+			[
+				"bp",
+				"background-position"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"wb",
+				"website"
+			],
+			[
+				"me",
+				"medecins"
+			],
+			[
+				"pha",
+				"pharmaciens"
+			],
+			[
+				"off",
+				"offset〔function〕"
+			],
+			[
+				"remo",
+				"removeClass"
+			],
+			[
+				"has",
+				"hasClass〔function〕"
+			],
+			[
+				"add",
+				"addClass〔function〕"
+			],
+			[
+				"el",
+				"element"
+			],
+			[
+				"fa",
+				"fadeOut〔function〕"
+			],
+			[
+				"M",
+				"Medecins"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"wi",
+				"window"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"win",
+				"window_with"
+			],
+			[
+				"blue",
+				"blue--dark	 _states.scss"
+			],
+			[
+				"grild-ap",
+				"grild-apropos-r	 _grid.scss"
+			],
+			[
+				"grey",
+				"grey--x-dark	 _config.scss"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"font-family--pr",
+				"font-family--primary-regular	 _nav.scss"
+			],
+			[
+				"para",
+				"para__medium	 style.css"
+			],
+			[
+				"gree",
+				"green--light	 _config.scss"
+			],
+			[
+				"gey",
+				"grey--light	 _config.scss"
+			],
+			[
+				"side",
+				"_sideBarNewProducts.scss"
+			],
+			[
+				"ac",
+				"active	 style.css"
+			],
+			[
+				"tabe-",
+				"table-cell"
+			],
+			[
+				"f",
+				"font-family--regular	 _extends.scss"
+			],
+			[
+				"i",
+				"icon-contact.png	w:80 h:56"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"bule-",
+				"blue--xlight	 _wrappers.scss"
+			],
+			[
+				"font-family--primary",
+				"font-family--primary--regular	 _main.scss"
+			],
+			[
+				"font-family--p",
+				"font-family--primary--regular	 _main.scss"
+			],
+			[
+				"font-fami",
+				"font-family--primary--regular	 _contactForm.scss"
+			],
+			[
+				"page",
+				"page-header.php"
+			],
+			[
+				"l",
+				"$lang〔variable〕"
+			],
+			[
+				"g",
+				"grey	 _contactForm.scss"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"bg",
+				"bg-contact.jpg	w:818 h:601"
+			],
+			[
+				"fon",
+				"font-weight--medium	 _nav.scss"
+			],
+			[
+				"pading",
+				"padding-top"
+			],
+			[
+				"para__",
+				"para__medium"
+			],
+			[
+				"s",
+				"src/"
+			],
+			[
+				"child",
+				"children〔function〕"
+			],
+			[
+				"fs",
+				"fs	font-style: ${italic};"
+			],
+			[
+				"tt",
+				"tt-n	text-transform: none;"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"fl",
+				"fl-r	float: right;"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"po",
+				"pos-r	position: relative;"
+			],
+			[
+				"bl",
+				"blue	 _btn.scss"
+			],
+			[
+				"tranf",
+				"transform"
+			],
+			[
+				"link-hover",
+				"link-hover	 style.css"
+			],
+			[
+				"bo",
+				"border-top"
+			],
+			[
+				"first",
+				"first-child	 pseudo selector"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"bu",
+				"blue--light	 _textes.scss"
+			],
+			[
+				"boe",
+				"border-left"
+			],
+			[
+				"cp",
+				"cur-p	cursor: pointer;"
+			],
+			[
+				"blue--",
+				"blue--dark	 _wrappers.scss"
+			],
+			[
+				"hdl",
+				"hdl__xlarge"
+			],
+			[
+				"vi",
+				"vivamine-pre.jpg	w:375 h:260"
+			],
+			[
+				"font-w",
+				"font-weight--light	 _base.scss"
+			],
+			[
+				"pra",
+				"para	 _textes.scss"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"border",
+				"border-right"
+			],
+			[
+				"gg",
+				"google-faces-an-antitrust-probe-in-russia.jpg	w:2294 h:1720"
+			],
+			[
+				"m",
+				"mb	margin-bottom"
+			],
+			[
+				"bt",
+				"bdt	border-top"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/js/modules/typed.js",
+			"settings":
+			{
+				"buffer_size": 1726,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/js/modules/resumer.js",
+			"settings":
+			{
+				"buffer_size": 1813,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 7236,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "works.php",
+			"settings":
+			{
+				"buffer_size": 8177,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "contact.php",
+			"settings":
+			{
+				"buffer_size": 6535,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/scss/layout/_grid.scss",
+			"settings":
+			{
+				"buffer_size": 7519,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/scss/modules/_lang.scss",
+			"settings":
+			{
+				"buffer_size": 3355,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/scss/modules/_icons.scss",
+			"settings":
+			{
+				"buffer_size": 3286,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/David/AppData/Local/Temp/scp07760/www/contact.php",
+			"settings":
+			{
+				"buffer_size": 6544,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/js/libs/simplebar_min.js",
+			"settings":
+			{
+				"buffer_size": 5162,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 7186,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/js/common.js",
+			"settings":
+			{
+				"buffer_size": 1382,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/js/index.js",
+			"settings":
+			{
+				"buffer_size": 184,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/js/works.js",
+			"settings":
+			{
+				"buffer_size": 103,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 293.0,
+		"last_filter": "Package Control: in",
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"w",
+				"W3C Validators: Validate HTML5"
+			],
+			[
+				"css",
+				"CSS Completions: Prune Cache"
+			],
+			[
+				"w3",
+				"W3C Validators: Validate HTML5"
+			],
+			[
+				"w3c",
+				"W3C Validators: Validate HTML5"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"CSS Completions: Prune Cache"
+			],
+			[
+				"Pa",
+				"Project: Add Folder"
+			],
+			[
+				"Package Controlre",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"Package Contins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 208.0,
+		"history":
+		[
+			"ignored",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/app/wamp/www/portfolio/www",
+		"/D/app/wamp/www/portfolio/www/include/projects",
+		"/D/app/wamp/www/portfolio/www/src",
+		"/D/app/wamp/www/portfolio/www/src/js/libs",
+		"/D/app/wamp/www/portfolio/www/src/js/modules",
+		"/D/app/wamp/www/portfolio/www/src/scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/base",
+		"/D/app/wamp/www/portfolio/www/src/scss/layout",
+		"/D/app/wamp/www/portfolio/www/src/scss/modules",
+		"/D/app/wamp/www/portfolio/www/src/scss/settings"
+	],
+	"file_history":
+	[
+		"/D/app/wamp/www/portfolio/www/include/analyticstracking.php",
+		"/C/Users/David/Downloads/sitemap.xml",
+		"/D/app/wamp/www/portfolio/www/works.php",
+		"/D/app/wamp/www/portfolio/www-built/src/js/index.js",
+		"/D/app/wamp/www/portfolio/www/src/scss/settings/_config.scss",
+		"/D/app/wamp/www/portfolio/www/index.php",
+		"/D/app/wamp/www/portfolio/www/src/js/modules/form.js",
+		"/D/app/wamp/www/portfolio/www/src/js/modules/lang.js",
+		"/D/app/wamp/www/portfolio/www/src/js/contact.js",
+		"/D/app/wamp/www/portfolio/www/src/js/modules/menu.js",
+		"/D/app/wamp/www/portfolio/www/resumer/pdf.php",
+		"/D/app/wamp/www/portfolio/www/src/js/modules/preload.js",
+		"/D/app/wamp/www/orangina/src/scss/layout/_wrappers.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/base/_base.scss",
+		"/D/app/wamp/www/orangina/src/scss/base/_base.scss",
+		"/D/app/wamp/www/portfolio/www/src/css/libs/simplebar.css",
+		"/D/app/wamp/www/portfolio/www/src/scss/layout/_wrappers_home.scss",
+		"/D/app/wamp/www/portfolio/www/lang/ja.php",
+		"/D/app/wamp/www/portfolio/www/src/scss/settings/_functions.scss",
+		"/D/app/wamp/www/portfolio/www/src/js/libs/simplebar_min.js",
+		"/D/app/wamp/www/portfolio/www/src/scss/style_en.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/style_jp.scss",
+		"/D/app/wamp/www/portfolio/www/lang/en.php",
+		"/D/app/wamp/www/portfolio/www/config/gruntfile.js",
+		"/D/app/wamp/www/portfolio/www/src/scss/settings/_font_jp.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/settings/_font_en.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/components/_extends_jp.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/elements/_contact_form.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/modules/_lang.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/components/_extends_en.scss",
+		"/D/app/wamp/www/portfolio/www/include/projects/osis.php",
+		"/D/app/wamp/www/portfolio/www-built/src/scss/base/_base.scss",
+		"/D/app/wamp/www/portfolio/www-built/src/scss/modules/_extends.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/components/_headlines.scss",
+		"/D/app/wamp/www/portfolio/www/contact.php",
+		"/D/app/wamp/www/portfolio/www/src/scss/style.scss",
+		"/D/app/wamp/www/portfolio/www/src/js/modules/typed.js",
+		"/D/app/wamp/www/portfolio/www/lang/common.php",
+		"/D/app/wamp/www/portfolio/www/include/projects/elsa.php",
+		"/D/app/wamp/www/portfolio/www/src/js/modules/pluginsLoad.js",
+		"/D/app/wamp/www/portfolio/www/include/projects/film.php",
+		"/D/app/wamp/www/portfolio/www/protfolio.sublime-project",
+		"/D/app/wamp/www/portfolio/www/protfolio.sublime-workspace",
+		"/C/Users/David/AppData/Local/Temp/scp05049/opt/odoo/custom/addons/alibazar/dz-art-website/views/pages/livraison.xml",
+		"/C/Users/David/AppData/Local/Temp/scp10674/opt/odoo/custom/addons/alibazar/dz-art-website/views/pages/payment.xml",
+		"/C/Users/David/AppData/Local/Temp/scp05122/opt/odoo/custom/addons/alibazar/dz-art-website/views/pages/contact.xml",
+		"/C/Users/David/AppData/Local/Temp/scp13869/opt/odoo/custom/addons/alibazar/dz-art-website/static/scss/modules/_contactForm.scss",
+		"/C/Users/David/AppData/Local/Temp/scp42760/opt/odoo/custom/addons/alibazar/dz-art-website/static/scss/layout/_grid.scss",
+		"/C/Users/David/AppData/Local/Temp/scp37673/opt/odoo/custom/addons/alibazar/dz-art-website/views/pages/index.xml",
+		"/C/Users/David/AppData/Local/Temp/scp48547/opt/odoo/custom/addons/alibazar/dz-art-website/static/scss/modules/_nav.scss",
+		"/C/Users/David/AppData/Local/Temp/scp17629/opt/odoo/custom/addons/alibazar/dz-art-website/views/pages/panier.xml",
+		"/C/Users/David/AppData/Local/Temp/scp38380/opt/odoo/custom/addons/alibazar/dz-art-website/static/style/style.css",
+		"/C/Users/David/AppData/Local/Temp/scp36812/opt/odoo/custom/addons/alibazar/dz-art-website/static/scss/modules/_pagePanier.scss",
+		"/C/Users/David/AppData/Local/Temp/scp47300/opt/odoo/custom/addons/alibazar/dz-art-website/static/scss/layout/_wrappers.scss",
+		"/C/Users/David/AppData/Local/Temp/scp29928/opt/odoo/custom/addons/alibazar/dz-art-website/static/scss/modules/_sideBarCats.scss",
+		"/C/Users/David/AppData/Local/Temp/scp37012/opt/odoo/custom/addons/alibazar/dz-art-website/views/pages/header.xml",
+		"/C/Users/David/AppData/Local/Temp/scp37469/opt/odoo/custom/addons/alibazar/dz-art-website/views/templates.xml",
+		"/C/Users/David/AppData/Local/Temp/scp36829/opt/odoo/custom/addons/alibazar/dz-art-website/static/scss/modules/_home.scss",
+		"/C/Users/David/AppData/Local/Temp/scp37917/opt/odoo/custom/addons/alibazar/dz-art-website/views/views.xml",
+		"/C/Users/David/AppData/Local/Temp/scp37848/opt/odoo/custom/addons/alibazar/dz-art-website/views/pages/footer.xml",
+		"/C/Users/David/AppData/Local/Temp/scp15538/opt/odoo/custom/addons/alibazar/dz-art-website/static/scss/modules/_footer.scss",
+		"/C/Users/David/AppData/Local/Temp/scp18721/opt/odoo/custom/addons/alibazar/dz-art-website/static/scss/modules/_ficheProducts.scss",
+		"/C/Users/David/AppData/Local/Temp/scp36748/opt/odoo/custom/addons/alibazar/dz-art-website/static/scss/layout/_main.scss",
+		"/C/Users/David/AppData/Local/Temp/scp29044/opt/odoo/custom/addons/alibazar/dz-art-website/static/js/effect.js",
+		"/C/Users/David/AppData/Local/Temp/scp14050/opt/odoo/custom/addons/alibazar/dz-art-website/static/scss/settings/_config.scss",
+		"/C/Users/David/AppData/Local/Temp/scp32993/etc/odoo-server.conf",
+		"/C/Users/David/AppData/Local/Temp/scp18730/opt/odoo/custom/addons/alibazar/dz-art-website/static/scss/modules/_sideBarPanier.scss",
+		"/C/Users/David/AppData/Local/Temp/scp47708/opt/odoo/custom/addons/alibazar/dz-art-website/static/scss/base/_base.scss",
+		"/C/Users/David/AppData/Local/Temp/scp37628/opt/odoo/custom/addons/alibazar/dz-art-website/views/styles.xml",
+		"/C/Users/David/AppData/Local/Temp/scp07215/opt/odoo/custom/addons/eti_kms/eti_kms_reports/__openerp__.py",
+		"/C/Users/David/AppData/Local/Temp/scp40306/opt/odoo/custom/addons/eti_kms/eti_kms_reports/static/style/css/style.css",
+		"/C/Users/David/AppData/Local/Temp/scp14420/opt/odoo/custom/addons/eti_kms/eti_kms_reports/report/proforma_qweb.xml",
+		"/C/Users/David/AppData/Local/Temp/scp11985/opt/odoo/custom/addons/eti_kms/eti_kms_reports/report/liste_colisage_qweb.xml",
+		"/C/Users/David/AppData/Local/Temp/scp57087/opt/odoo/custom/addons/eti_kms/eti_kms_reports/report/facture_export_qweb.xml",
+		"/C/Users/David/AppData/Local/Temp/scp48049/opt/odoo/custom/addons/eti_kms/eti_kms_reports/report.xml",
+		"/C/Users/David/AppData/Local/Temp/scp02871/opt/odoo/custom/addons/eti_kms/eti_kms_reports/report/templates/templates.xml",
+		"/C/Users/David/AppData/Local/Temp/scp51298/opt/odoo/custom/addons/eti_kms/eti_kms_reports/__init__.py",
+		"/C/Users/David/AppData/Local/Temp/scp47522/opt/odoo/custom/addons/eti_kms/kms/report/report.xml",
+		"/C/Users/David/AppData/Local/Temp/scp47275/opt/odoo/custom/addons/eti_kms/kms/report/report_account_invoice.py",
+		"/C/Users/David/AppData/Local/Temp/scp23003/opt/odoo/custom/addons/eti_kms/eti_kms_reports/report/purchase_order_qweb.xml",
+		"/C/Users/David/AppData/Local/Temp/scp51893/opt/odoo/custom/addons/eti_kms/eti_kms_reports/report/details_colisage_qweb.xml",
+		"/C/Users/David/AppData/Local/Temp/scp46818/opt/odoo/custom/addons/eti_kms/eti_kms_reports/report/note_de_poids_qweb.xml",
+		"/C/Users/David/AppData/Local/Temp/scp25105/opt/odoo/custom/addons/eti_kms/kms/report/webkit/listecolisagewebkit.mako",
+		"/D/app/wamp/www/portfolio/www/src/scss/modules/_icons.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/layout/_grid.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/modules/_nav.scss",
+		"/D/app/wamp/www/portfolio/www/src/js/modules/sideBar.js",
+		"/D/app/wamp/www/portfolio/www/src/scss/layout/_wrappers.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/elements/_projectsVisuel.scss",
+		"/D/app/wamp/www/portfolio/www/projects.php",
+		"/D/app/wamp/www/portfolio/www/src/scss/elements/_projectsSkills.scss",
+		"/D/app/wamp/www/portfolio/www/include/page-header.php",
+		"/D/app/wamp/www/portfolio/www/src/js/modules/mesurment.js",
+		"/D/app/wamp/www/portfolio/www/src/js/modules/stopAnimation.js",
+		"/D/app/wamp/www/portfolio/www/src/scss/modules/_contactForm.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/elements/_projectsProfile.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/elements/_projectsSideBarUI.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/modules/_sideBar.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/states/_states.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/modules/_about.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/modules/_projectsVisuel.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/modules/_projectsArticles.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/states/_cssAnimations.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/modules/_contactInfos.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/settings/_helpers.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/modules/_diamond.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/layout/_main.scss",
+		"/D/app/wamp/www/portfolio/www/src/css/libs/jquery.mCustomScrollbar.min.css",
+		"/D/app/wamp/www/portfolio/www/src/scss/settings/_mixins.scss",
+		"/D/app/wamp/www/portfolio/www/src/js/modules/diamond.js",
+		"/D/app/wamp/www/portfolio/www-built/projects.php",
+		"/D/app/wamp/www/portfolio/www/include/nav.php",
+		"/D/app/wamp/www/portfolio/www/src/scss/modules/_btn.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/modules/_extends.scss",
+		"/D/app/wamp/www/portfolio/www/src/scss/modules/_healines.scss",
+		"/D/app/wamp/www/portfolio/www/include/lang.php",
+		"/D/app/wamp/www/portfolio/www/src/js/index.js",
+		"/D/app/wamp/www/portfolio/www/src/js/common.js",
+		"/D/app/wamp/www/portfolio/www/src/scss/modules/_label.scss",
+		"/D/app/wamp/www/portfolio/tools/build.js",
+		"/D/app/wamp/www/portfolio/www/src/css/style.css",
+		"/D/app/wamp/www/backup_portfolio/src/js/libs/jquery.FlowupLabels.js",
+		"/D/app/wamp/www/portfolio/www/src/js/modules/dotdot.js",
+		"/D/app/wamp/www/portfolio/www/fromProcess.php",
+		"/D/app/wamp/www/portfolio/www/src/js/modules/form-angular.js",
+		"/D/app/wamp/www/backup_portfolio/contact.php",
+		"/D/app/wamp/www/backup_portfolio/src/js/modules/form-angular.js",
+		"/D/app/wamp/www/portfolio/www/src/js/modules/ng-bs-animated-button.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"libdotdot",
+			"5px",
+			"box",
+			"wrapper-box-cv",
+			"wbepage",
+			"jquery",
+			"Jquery",
+			"Photoshop ",
+			"font-family: ",
+			"center",
+			"lang-span",
+			"CSS",
+			"HTML",
+			"wrapper-livraison-btn",
+			"btn-envoyer",
+			"oe_cart table",
+			"panier",
+			"wrapper-onglet-panier",
+			"fiche-produit-img",
+			".container-wrapp",
+			"container-wrapp",
+			".container-wrapp",
+			".wrapper-footer-infos",
+			"footer",
+			".wrapper-footer-infos",
+			"wrapper-footer",
+			"wrapper-footer-infos",
+			"footer-links",
+			".grid__footer-links",
+			"links-blocks",
+			"grid__footer-links-blocks",
+			"logo",
+			".wrapper-top-header",
+			"44",
+			"top",
+			"wrapper-logo",
+			"logo",
+			"wrapper-top-header",
+			"top",
+			"tel",
+			"line_totals",
+			"h2",
+			"class=\"poids\"",
+			"poids",
+			"tva_details",
+			"class=\"poids\"",
+			"class=\"yellow\"",
+			"tva-infos",
+			"details_table",
+			"tva_details",
+			" details-facture",
+			"black",
+			"109px",
+			".wrapper__lang--projects",
+			"$current",
+			"curent",
+			"current",
+			"Current",
+			"current",
+			"Current",
+			"current",
+			"add",
+			"icon-logo",
+			"grid__container--form",
+			"importantRule",
+			"add",
+			"focuse",
+			"addClass",
+			"animated",
+			"icon-scroll-arrow",
+			".mCSB_dragger_onDrag .mCSB_dragger_bar",
+			"mCSB_draggerRail",
+			".mCS-minimal.mCSB_scrollTools",
+			"mCSB_outside+.mCS-minimal-dark",
+			"hidden-btn",
+			"skillLevel",
+			"line-legende",
+			"sideBar-nav__icon",
+			"sideBar-nav",
+			"sideBar-nav__title",
+			"wrapper-btn-sideBar",
+			"sideBar-nav__title",
+			".red",
+			"red",
+			"wrapper-form",
+			"wrapper-title",
+			"mobile",
+			"wrapper-part-text",
+			"wrapper-hdl-post-groupe",
+			"wrapper-hdl-post-grouped",
+			"wrapper-scroll-home",
+			"wrapper-side-comment",
+			"wrapper-img-projet",
+			"wrapper-sofware-logo",
+			"wrapper-projects-title",
+			"wrapper-profile",
+			"wrapper-sideBar-Icon",
+			"ciao",
+			"icon-logo",
+			"wrapper_projects-menu",
+			"wrapper-logo",
+			"wrapper-about",
+			"wrapper-losange-step",
+			"wrapper-logo-center",
+			"grid-project-center",
+			"grid-legende-side",
+			"grid-side-comment",
+			"contactInfoIcones",
+			"grild-skillLabel",
+			"grild__skill",
+			"grild-groupedTitle",
+			"grild-lineTitle",
+			"grild-groupedTitle",
+			"grild-lineTitle",
+			"grid-img-project",
+			"wrapper-lang-left",
+			"grid-fromField",
+			"grild-software-img",
+			"wBlock",
+			"wRef",
+			"fleche",
+			"sideBar-nav__iconCenter",
+			"nav__iconCneter",
+			"icon-nav-center",
+			"nav__item",
+			"wrapper_mobile_*",
+			"wrapper_mobile_",
+			"nav__wrapper--white"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"tragetWrapper",
+			"src/",
+			"dist/",
+			"/lsaee-theme/static/img/",
+			"/expert-consulting-theme/static/img/",
+			"#017b52",
+			"#15181d",
+			"../../img/mCSB_buttons"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 8,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/js/modules/typed.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1726,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								345,
+								345
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 234.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/js/modules/resumer.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1813,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								446,
+								446
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7236,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								69,
+								69
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "works.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8177,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								69,
+								69
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "contact.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6535,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								866,
+								866
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/scss/layout/_grid.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7519,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5974,
+								5974
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 3791.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/scss/modules/_lang.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3355,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1085,
+								1085
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/scss/modules/_icons.scss",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3286,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3188,
+								3188
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 2184.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/Users/David/AppData/Local/Temp/scp07760/www/contact.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6544,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4205,
+								4205
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1228.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/js/libs/simplebar_min.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5162,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5162,
+								5162
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "config/gruntfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7186,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								494,
+								494
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/Theme - Afterglow/Prefs/Langs/Gruntfile JS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 117.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/js/common.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1382,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								418,
+								427
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/js/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 184,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								41,
+								41
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "src/js/works.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 103,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "protfolio.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 284.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

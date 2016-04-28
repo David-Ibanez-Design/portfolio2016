@@ -1,0 +1,75 @@
+/*
+ * SMACSS + SCSS starter v2.0
+ * Inspired by SMACSS http://smacss.com
+ * Author: @jonathanpath
+ * Date: 11 July 2013
+ *
+ * https://github.com/jonathanpath/SASS-SMACSS
+ * See file structure in http://jonathanpath.com/sass+smacss/scss/style.scss
+ * Sass Structure inspired by : https://github.com/sutter/POPY-starter-HTML-SCSS
+ *
+ * Coding rules : https://github.com/necolas/idiomatic-css
+ *
+ */
+
+ /* ------ libs --------*/
+
+@import "../css/libs/atelier-cave-light.css";
+@import "../css/libs/simplebar.css";
+
+/* ------ vendors --------*/
+
+@import "base/reset";
+@import "vendors/bourbon/bourbon";
+@import "vendors/susy/susy";
+@import "vendors/compass_rhythm/compass_rhythm";
+
+/* ------ Settings --------*/
+
+@import "settings/config";
+@import "settings/font";
+@import "settings/functions";
+@import "settings/mixins";
+@import "settings/helpers";
+
+/* ------ Base --------*/
+
+@import "base/base";
+
+/* ------ Layout --------*/
+
+@import "layout/grid";
+@import "layout/wrappers_home";
+@import "layout/wrappers_contact";
+@import "layout/wrappers_projects";
+@import "layout/wrappers_multipages";
+
+/* ------ components --------*/
+
+@import "components/extends";
+@import "components/btn";
+@import "components/headlines";
+@import "components/labels";
+@import "components/textes";
+
+/* ------ Modules --------*/
+
+@import "modules/extends";
+@import "modules/icons";
+@import "modules/nav";
+@import "modules/nav_projects";
+@import "modules/nav_sidebar";
+@import "modules/lang";
+
+/* ------ elements --------*/
+
+@import "elements/home_about";
+@import "elements/home_diamond";
+@import "elements/contact_infos";
+@import "elements/contact_form";
+@import "elements/projects_articles";
+@import "elements/projects_visuel";
+
+/* ------ States --------*/
+
+@import "states/cssAnimations";

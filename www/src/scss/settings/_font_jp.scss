@@ -1,0 +1,23 @@
+/* ===========================
+   config : Global config
+   =========================== */
+
+
+// fonts list
+
+$font-family--primary--bold-ja : "MS PGothic", Arial, "Hiragino Kaku Gothic ProN", "Osaka", sans-serif;
+$font-family--primary--regular : "MS PGothic", Arial, "Hiragino Kaku Gothic ProN", "Osaka", sans-serif;
+
+$font-family--secondary--black : "MS PGothic", Arial, "Hiragino Kaku Gothic ProN", "Osaka", sans-serif;
+$font-family--secondary--bold : "MS PGothic", Arial, "Hiragino Kaku Gothic ProN", "Osaka", sans-serif;
+$font-family--secondary--regular : "MS PGothic", Arial, "Hiragino Kaku Gothic ProN", "Osaka", sans-serif;
+$font-family--secondary--light : "MS PGothic", Arial, "Hiragino Kaku Gothic ProN", "Osaka", sans-serif;
+
+// font weight (ici ne pas utiliser les police italique les définir dans le css)
+
+$font-weight--light			: 300;
+$font-weight--medium		: 400;
+$font-weight--bold			: 700;
+$font-weight--x-bold	  : 800;
+$font-weight--xx-bold   : 900;
+

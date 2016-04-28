@@ -1,0 +1,57 @@
+/* ======================
+   Module/projectsVisuel
+   ======================= */
+
+
+.inner-projectCover{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    border-bottom: 1px solid #0C0C0C;
+}
+
+#elsa-bg{ background-image: img-path(fond-test2, jpg);}
+#lsp-bg{ background-image: img-path(fond-lsp, jpg);}
+#portfolio-bg{ background-image: img-path(fond-portfolio, jpg);}
+#osis-bg{ background-image: img-path(fond-osis, jpg);}
+#lsa-portail-bg{ background-image: img-path(fond-lsa-portail, jpg);}
+#isucare-bg{ background-image: img-path(fond-isucare, jpg);}
+#film-bg{ background-image: img-path(fond-film, jpg);}
+
+
+.projectCover-overlay{
+    background: #212121;
+    height: 100%;
+    opacity: 0.3;
+    position: relative;
+    width: 100%;
+}
+
+.logo-project{
+    display: block;
+    margin: 27px auto 10px;
+}
+
+.logo-project-small{
+    display: block;
+    margin: 27px auto 10px;
+
+    @include susy-breakpoint( ( $xxsMobile, $xsMobile), $susy) {
+            width: 100%;
+    }
+    @include susy-breakpoint( ( $min-width, $xxsMobile), $susy) {
+            width: 140px;
+    }
+
+}
+
+
+
+.btn-project-img{
+
+    display: none !important;
+    @include susy-breakpoint( ( $min-width, $tablet), $susy) {
+        display: block !important;
+         }
+
+}

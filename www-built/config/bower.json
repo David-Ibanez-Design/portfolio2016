@@ -1,0 +1,29 @@
+{
+  "name" : "test",
+  "version": "0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies" : {
+    "bourbon": "latest",
+    "susy": "latest",
+    "breakpoint": "latest",
+    "jquery": "latest"
+  },
+  "install" : {
+    "path" : {
+      "css": "../src/css/libs",
+      "js": "../src/js/libs",
+      "scss": "../src/scss/vendors"
+    },
+    "sources" : {
+      "bourbon"    : "bower_components/bourbon/app/assets/stylesheets/**",
+      "susy" : "bower_components/susy/sass/**"
+    }
+
+  }
+}

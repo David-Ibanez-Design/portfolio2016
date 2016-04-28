@@ -1,0 +1,115 @@
+/* ======================
+   Module/projectsArticles
+   ======================= */
+
+
+.number-hdl {
+
+    background:  $red;
+    color: rgba(62, 75, 94, 0.24);
+    float: left;
+    @include adjust-font-size-to(29px);
+    font-weight: $font-weight--medium;
+    height: 100%;
+    line-height: 22px;
+    margin: 9px 21px 0 0;
+    text-indent: -52px;
+    text-shadow: 1px 1px #ffffff;
+    width: 3px;
+    &:lang(en){font-family: $font-family--primary--regular--en};
+    &:lang(ja){font-family: $font-family--ja};
+    display:block;
+	@include susy-breakpoint(( $min-width, $xsMobile), $susy) {
+		display:none;
+ 	}
+
+}
+
+
+
+.skills_used{
+
+	p{
+		float:left;
+	    margin: 0 10px 15px 0;
+
+	    span{
+	    	fill:$red;
+	    	width:18px;
+	    	float:left;
+	    	margin-right:6px;
+	    	line-height:14px;
+	    }
+
+	    span.vertical{
+	    	width:11px;
+	    }
+
+	    span.js{
+	    	width:6px;
+	    }
+	}
+}
+
+
+.code{
+	background: #fff none repeat scroll 0 0;
+    border: 1px solid #e3edf3;
+    border-radius: 2px;
+    font-family: $font-family--secondary--regular--en ,monospace,sans-serif;
+	font-size: 0.8em;
+    font-style: italic;
+    padding: 3px 9px;
+    white-space: pre-wrap;
+}
+
+.list_obj{
+	margin:0 auto 38px;
+	width: 80%;
+
+	li{
+		margin-bottom:5px;
+		list-style: disc;
+		list-style-position: inside;
+	}
+}
+
+
+
+.underline{
+	color: $blue--x-light;
+	position: relative;
+
+	span{
+	    bottom: -1px;
+	    display: block;
+	    height: 0.5px;
+	    left: 50%;
+	    position: absolute;
+	    transform: translateX(-50%);
+	    width: 103%;
+	    z-index: -1;
+	    background: rgba(203, 208, 213, 0.54);
+
+
+	}
+
+	&:hover span{
+		background:$red;
+		height: 19px;
+		cursor:pointer;
+		transition:all $trns-duration;
+	}
+}
+
+.link{
+	padding:3px;
+
+	&:hover{
+		background:$red;
+		cursor:pointer;
+		text-decoration:none;
+		color:$white;
+	}
+}
+

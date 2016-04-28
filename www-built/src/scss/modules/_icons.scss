@@ -1,0 +1,232 @@
+/* ==|====================
+   Module/icons
+
+   Ici on  applique les styte de base qui est réutilisable via
+   un extends.
+   ensuite si l'ont à besion de créer un style spécifique on
+   ajoute seulement un modifieur qui prend la class de base +
+   les styles qui sont en plus mais sans avoir à supprimer de styles.
+   -- dans cette exemple on applique une marge différente.
+   ======================= */
+
+.wrapper__res-social{
+	a{
+		display: block;
+		float: left;
+		fill:#D0D0D0;
+		cursor: pointer;
+		transition:all $trns-duration;
+		width: 29px;
+		margin-right: 8px;
+		&:hover{fill:$gold;}
+
+
+	}
+
+	.icon-pinterest{
+
+		margin-right: 6px;
+
+		svg{
+		    width: 25px !important;
+		    margin-top: 3px;
+		    &:hover .st0{fill:$gold;}
+		}
+
+		.st0{
+			fill:#D0D0D0;
+		}
+
+		.st1{
+			fill:$white;
+		}
+
+
+	}
+
+}
+
+.icon-arrow-bottom{
+	position: absolute;
+	top: 30px;
+    right: -16px;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	transform: rotate(45deg);
+	border-top: 5px solid $black;
+	@include susy-breakpoint($susy-media-mobile, $susy) {
+		display: none;
+	}
+
+}
+
+.icon-arrow-bottom-contact{
+	position: absolute;
+	top: -14px;
+    left: -18px;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	transform: rotate(45deg);
+	border-top: 5px solid $black;
+	@include susy-breakpoint($susy-media-mobile, $susy) {
+		display: none;
+	}
+}
+
+
+/// logo
+
+.logo-mobile{
+	fill: $white;
+	@include center-axis(both);
+	width: 27px;
+    height: 27px;
+}
+
+.logo-loading{
+	  	height: auto;
+	    margin: 5px auto;
+	    width: 54px;
+		fill:$white;
+		display: block;
+		overflow: hidden;
+		top:50%;
+		left:50%;
+		margin: -24px 0 0 -26px;
+		position: absolute;
+		transform-origin: center center;
+		z-index: 52;
+
+		 @include susy-breakpoint($susy-media-mobile, $susy) {
+		    display: none;
+		 }
+
+		#st0{
+			fill:$black;
+		}
+
+
+		#st1{
+			fill:$white;
+		}
+
+		.mask{
+			fill:$red;
+		}
+}
+
+.icon-mail{
+	fill:$white;
+	width: 23px;
+	display: block;
+	height: auto;
+}
+
+.icon-phone{
+	fill:$white;
+	width: 23px;
+	display: block;
+	height: auto;
+	margin-top: 12px;
+}
+
+.icon-scss_code{
+	margin-top: -1px;
+	width: 13px !important;
+}
+
+.icon-jquery_code{
+	margin-top: -1px;
+	width: 7px !important;
+}
+
+.icon-PHP{
+	margin-top: 5px;
+}
+
+.icon-javascript_code{
+	margin-top: -1px;
+	width: 13px !important;
+}
+
+
+.icon-logo{
+	transition: opacity 3s;
+	opacity: 1;
+}
+
+.logo-contact{
+
+  	height: auto;
+    width: 51px;
+	fill:$black;
+	display: block;
+	top:50%;
+	left:50%;
+	position: absolute;
+	margin-left: -10px;
+	margin-top: -12.5px;
+
+
+	 @include susy-breakpoint($susy-media-mobile, $susy) {
+		margin: 10px auto;
+			width: 34px;
+			position: relative;
+			top:0;
+			left: 0;
+			fill:$white;
+	 }
+
+
+}
+
+.logo-projects{
+
+  	height: auto;
+    margin: 0 auto;
+    padding-top: 31px;
+    width: 36px;
+	fill:white;
+	display: block;
+	position: relative;
+	transform: rotate(0deg);
+	top:0;
+    left:0;
+
+	 @include susy-breakpoint($susy-media-mobile, $susy) {
+		margin: 10px auto;
+			width: 34px;
+			padding-top: 0px;
+			fill:$white;
+	 }
+
+}
+
+
+.ciao{
+	opacity: 0;
+}
+
+
+.icon-concept{
+	width: 31px !important;
+}
+
+.icon-arrow-top{
+
+	svg{
+		fill:$white;
+	    width: 21px;
+	    position: absolute;
+		top: 68%;
+		left: 77%;
+	    transform: translate(-50%, -50%);
+	}
+
+
+}
+

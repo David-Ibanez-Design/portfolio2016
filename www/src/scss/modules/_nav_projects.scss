@@ -1,0 +1,248 @@
+.projects-menu{
+
+
+	@include e(bg) {
+		position: relative;
+		display: block;
+		height: 100px;
+		width: 100%;
+		margin-top: 1px solid $black;
+
+
+		&:hover{
+			background: $red;
+			transition:all $trns-duration;
+		}
+		&:hover .projects-menu__icon{
+			opacity: 1;
+		}
+
+		&:hover .projects-menu__list{
+			display:block;
+		}
+
+	}
+
+
+	@include e(icon) {
+		opacity: 0.6;
+		fill:$white;
+		@include center-axis(both);
+		width: 23px;
+
+		.st1{
+			fill:none;
+			stroke:$white;
+			stroke-width:5;
+			stroke-miterlimit:10;
+		}
+
+	}
+
+	@include e(list) {
+	display: none;
+	position: absolute;
+	left:115px;
+	bottom: 0;
+	height: 100px;
+	width: 1051px;
+	overflow: hidden;
+
+
+		ul{
+			margin-top:0;
+			float:left;
+			height: 100%;
+			position: absolute;
+			left:57px;
+			width: 2045px;
+
+				li{
+				height: 100%;
+				width: 331px;
+				background: #212121;
+				border-left:1px solid #323232;
+				border-right:1px solid rgba(0, 0, 0, 0.29);
+				float: left;
+				padding: 12px;
+				transition:all $trns-duration;
+
+				&:hover{
+				background: #3a3a3a;
+				transition:all 1s;
+				}
+
+
+				&:last-child{
+					border-left:none;
+				}
+
+
+			}
+		}
+
+}
+
+
+@include e(thumbs) {
+
+			overflow:hidden;
+
+			@include m(visual) {
+
+				display: block;
+				float: left;
+				height: 100%;
+
+			}
+
+			@include m(titre) {
+
+				font-family:  ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+				font-size: 12px;
+				color: $white;
+				display: block;
+			}
+
+			@include m(text) {
+
+				&:lang(en){font-family: $font-family--secondary--light--en};
+				&:lang(ja){font-family: $font-family--ja};
+				margin-top: 8px;
+				line-height: 14px;
+				font-size: 11px;
+				color: #cacaca;
+				display: block;
+			}
+
+			@include m(link) {
+
+				font-family:  ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+				display: block;
+				font-size: 10px;
+				color:#1d96b8;
+				position: absolute;
+				bottom: -4px;
+				left:0px;
+				height: 15px;
+
+					&:hover {
+						color:$gold;
+						transition:all $trns-duration;
+					}
+
+			}
+}
+
+
+
+
+@include e(arrow) {
+
+		background: $black;
+		width: 57px;
+		height: 100%;
+		z-index: 10;
+		float:left;
+		position: relative;
+
+
+
+		@include m(controls) {
+
+			display: block;
+			height: 50%;
+			text-align: center;
+			line-height: 50px;
+			transition:all $trns-duration;
+
+				&:hover{
+					background: #2d2d2d;
+					transition:all 1s;
+				}
+
+				&:hover span{
+					stroke: $gold;
+				}
+
+				 &:hover .arrowLeft #line{
+				        transform: translate(0);
+				        opacity: 1;
+				 }
+
+				 &:hover .arrowLeft #arrow{
+				        transform: translate(0);
+				}
+
+			    &:hover .arrowRight #line{
+			        transform: translate(0);
+			        opacity: 1;
+			    }
+			    &:hover .arrowRight #arrow{
+			        transform: translate(0);
+			    }
+
+				.icon-arrow{
+
+					 display: block;
+				     text-align: center;
+				     width: 23px;
+				}
+
+
+				.arrowLeft{
+				    height: auto;
+				    display: block;
+				    margin-left: 10px;
+				     padding-top: 6px;
+				    stroke:#3e4b5e;
+
+
+				    #line{
+				        transform: translate(7px);
+				        opacity: 0;
+				        transition:all $trns-duration;
+				    }
+
+				    #arrow{
+				        transform: translate(7px);
+				        transition:all $trns-duration;
+				    }
+
+
+
+				}
+
+				.arrowRight{
+
+				    height: auto;
+				    display: block;
+				    margin-left: 19px;
+				     padding-top: 6px;
+				    stroke:#3e4b5e;
+
+				    #line{
+				        transform: translate(-7px);
+				        opacity: 0;
+				        transition:all $trns-duration;
+				    }
+
+				    #arrow{
+				        transform: translate(-7px);
+				        transition:all $trns-duration;
+				    }
+
+
+			}
+
+
+
+		}
+
+
+
+}
+
+
+
+}

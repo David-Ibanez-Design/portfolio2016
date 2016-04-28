@@ -1,0 +1,253 @@
+/* ===========================
+   extends -- Placeholder rules
+   Des règles de base qui s'appliquent à une catégorie d'élément
+   ex: titre, paragrphe, a etc.
+   ensuite il suffie de d'utiliser extends sur la classe
+   de l'élément.
+   si l'ont doit ajouter à l'élément ou ajoute un modifieur mais
+   on ne doit pas avoir à annuler des règles.
+   =========================== */
+%btn{
+	border-width  : 2px;
+	border-style  : solid;
+	display       : block;
+	text-align    : center;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: $trns-duration ;
+	background: transparent;
+	min-height: 50px;
+	position: relative;
+	padding: 7px 30px;
+	display: inline-block;
+	margin-bottom: 10px;
+	letter-spacing  : $letter-spacing;
+	&:hover{
+		background:$red;
+		border-color:$red;
+		color:$white;
+	}
+
+	&:lang(en){font-family: $font-family--secondary--bold--en;}
+	&:lang(ja){font-family: $font-family--ja;}
+}
+
+%btn-full{
+	border-width  : 0;
+	border-style  : solid;
+	font-weight   : $font-weight--bold;
+	text-align    : center;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: $trns-duration ;
+	background: $white;
+	min-height: 50px;
+	position: relative;
+	padding: 7px 30px;
+	color:$black;
+	letter-spacing  : $letter-spacing;
+	&:hover{
+		background:$white;
+		border-color:$white;
+		color:$black;
+	}
+}
+
+%btn-large-light{
+	@extend %btn;
+	color: $black;
+	border-color:$black;
+	width: 246px;
+	@include adjust-font-size-to(16px);
+	line-height: 0px;
+	height: 57px;
+}
+
+
+// label
+
+%label{
+	border-width   : 1px;
+	border-style   : solid;
+	text-transform : uppercase;
+	display       : inline;
+	text-align    : center;
+	border-radius : 0;
+	padding:5px;
+	font-style: italic;
+	font-family: verdana;
+}
+
+// icons
+
+%icons{
+    cursor: pointer;
+    &:hover{color:$gold;}
+}
+
+
+// Input form
+
+%form-input{
+  border: none;
+  border-bottom: 2px solid $black;
+  font-size: 17px;
+  color:$black;
+  width: 100%;
+  margin-bottom: -6px;
+  &:required{background: img-path(required) scroll transparent no-repeat  98% center;}
+  &:lang(en){font-family: $font-family--secondary--bold--en;}
+  &:lang(ja){font-family: $font-family--ja;}
+}
+
+// Nav Items
+
+%nav-iten-display{
+	margin-bottom : em(20px);
+	margin-top    : em(30px);
+}
+
+%nav-iten-link{
+	font-weight   : $font-weight--light;
+	display       : block;
+	padding       : em(8px, 18px);
+	border-bottom : 1px solid transparent;
+}
+
+%nav-iten-on{
+	border-color  :$color-primary;
+}
+
+// Headlines
+
+%hdln-xxlarge {
+	@extend h1;
+}
+
+%hdln-xslarge {
+	@include adjust-font-size-to(29px);
+	@include xtablet {@include adjust-font-size-to(28px);}
+	@include tablet {@include adjust-font-size-to(24px);}
+	@include mobile {@include adjust-font-size-to(23px);}
+	@include xsMobile {@include adjust-font-size-to(20px);}
+	line-height: 35px;
+	&:lang(en){font-family: $font-family--secondary--black--en;}
+	&:lang(ja){font-family: $font-family--ja;}
+}
+
+%hdln-xlarge {
+	@extend h2;
+
+}
+
+%hdln-large {
+	@extend h3;
+}
+
+%hdln-meduim {
+	@extend h4;
+}
+
+%hdln-small {
+	@extend h5;
+}
+
+%hdln-xsmall {
+	@extend h6;
+}
+
+%hdl-sous-titre-project{
+	@include adjust-font-size-to(22px);
+	@include xtablet {@include adjust-font-size-to(20px);}
+	@include tablet {@include adjust-font-size-to(20px);}
+	@include mobile {@include adjust-font-size-to(20px);}
+	@include xsMobile {@include adjust-font-size-to(20px);}
+	font-weight: 900;
+	&:lang(en){font-family: $font-family--primary--regular--en;}
+	&:lang(ja){font-family: $font-family--ja;}
+}
+
+%para {
+	&:lang(en){font-family: $font-family--secondary--light--en;}
+	&:lang(ja){font-family: $font-family--ja;}
+}
+
+%para-intro {
+	&:lang(en){font-family: $font-family--secondary--regular--en;}
+	&:lang(ja){font-family: $font-family--ja;}
+	clear: both;
+}
+
+// paragraph
+%para-large {
+	@include adjust-font-size-to(19px);
+	@extend %para;
+	line-height:31px;
+	@include trailer(1);
+	clear: both;
+}
+
+
+%para-medium {
+	@include adjust-font-size-to(16px);
+	@extend %para;
+	@include trailer(1);
+}
+
+%para-small {
+	@include adjust-font-size-to(14px);
+	line-height:17px;
+	font-weight     : $font-weight--medium;
+	&:lang(en){font-family: $font-family--secondary--regular--en;}
+	&:lang(ja){font-family: $font-family--ja;}
+
+	@include leader(0.5);
+	@include trailer(1);
+}
+
+%para-xsmall {
+	@include adjust-font-size-to(10px);
+	line-height:17px;
+	font-weight     : $font-weight--medium;
+
+	&:lang(en){font-family: $font-family--secondary--regular--en;}
+	&:lang(ja){font-family: $font-family--ja;}
+
+	@include leader(0.5);
+	@include trailer(1);
+}
+
+
+
+
+
+%nav__label{
+
+  	float: left;
+    line-height: 15px;
+    margin-right: 17px;
+    font-size: 14px;
+    width: 100%;
+
+	&:lang(en){font-family: $font-family--primary--regular--en;}
+	&:lang(ja){font-family: $font-family--ja;}
+
+	padding-top: 11px;
+}
+
+
+%lang__label{
+
+	@include shape(diamond,27px,$white);
+	overflow: visible !important;
+	 background: none !important;
+	 position:relative;
+	 display: block;
+	 @include susy-breakpoint($tablet, $susy) {
+	   &:hover  {border:3px solid $red !important;}
+	 }
+
+	 &:hover > span{color:$red !important;fill:$red !important;}
+	 &:hover > .icon-arrow-bottom{display: none;}
+	 &:hover > .icon-arrow-bottom-contact{display: none;}
+}

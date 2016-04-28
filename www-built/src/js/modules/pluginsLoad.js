@@ -1,0 +1,1 @@
+define(["jquery"],function(e,f){e(function(){e("img.lazy").lazyload({effect:"fadeIn"})})});
