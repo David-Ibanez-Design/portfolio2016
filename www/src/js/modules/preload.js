@@ -1,4 +1,4 @@
-define(['jquery', 'jqueryUI', 'SVG'], function($){
+define(["jquery", "jquery.ui" ,'svg'], function($, u, s){
 
     var logoIntro = (function(){
 
@@ -90,14 +90,14 @@ define(['jquery', 'jqueryUI', 'SVG'], function($){
             if($(window).width()>1040 && ! sessionStorage.firstVisit)
                {
 
-                    var element = SVG.select('rect#st1');
+                     var element = SVG.select('rect#st1');
 
-                    element.animate(500).move(0,130).animate(500).move(-350,130);
+                     element.animate(500).move(0,130).animate(500).move(-350,130);
 
                     function animeLoop()
                     {
 
-                          element.animate(500).move(0,130).animate(500).move(-350,130);
+                           element.animate(500).move(0,130).animate(500).move(-350,130);
 
                     }
 
@@ -126,6 +126,7 @@ define(['jquery', 'jqueryUI', 'SVG'], function($){
 
                   if($(window).width()>1040)
                   {
+
                     wrapper.height = 100;
                     wrapper.width = 100;
                     wrapper.top = '50%';

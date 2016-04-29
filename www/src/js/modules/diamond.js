@@ -1,7 +1,14 @@
 
-define(['jquery', 'jqueryUI'], function($, u){
+
+
+define(["jquery", "jquery.ui"], function($, u){
+
+$( document ).ready(function() {
 
     var losange = (function(){
+
+
+
 
           // Init global variables
           var diamondsHover = false;
@@ -26,17 +33,17 @@ define(['jquery', 'jqueryUI'], function($, u){
 
 
           function dimondsProjectsLoader(){
-                        
-              sizeProjects(); 
+
+              sizeProjects();
               if($(window).width() > 1024)
               {
                    positionProjects();
                    artistTrigger = true;
-                } 
-                else 
+                }
+                else
                 {
                   positionProjects();
-                  artistTrigger = true; 
+                  artistTrigger = true;
                 }
                  sizeProjects();
           }
@@ -54,7 +61,7 @@ define(['jquery', 'jqueryUI'], function($, u){
            function leaveDiamonds(){
 
               $(this).find('h6').css({'opacity':'0'})
-              $(this).find('span').css({'opacity':'0', 'top': '80%'})       
+              $(this).find('span').css({'opacity':'0', 'top': '80%'})
               $(this).find('.diamond__contour').stop().animate({'width':'255px','height':'255px','marginLeft':'-127.5px','marginTop':'-127.5px',},300, 'easeInOutCubic');
               $diamonds.not(this).stop().animate({'opacity':1},100);
 
@@ -62,29 +69,31 @@ define(['jquery', 'jqueryUI'], function($, u){
 
            function sizeProjects(){
 
+             // alert($diamondsWrapper.attr('class'))
+
               var wWidth = $(window).width();
               var wHeight = $(window).height();
               diamonds_height = 600;
               var zoom_factor = 1;
-              
+
               /////////////////////////////////// ENTRE 1024 et 1600////////////////////////////////////////////////////
-              
+
               if(wWidth > 1024 && wWidth < 1600)
                 { // if gallery is still landscape but too narrow to fit the diamonds, elements will scale down.
 
-                   var container_size = Math.round(wWidth / 2) - 200;   
+                   var container_size = Math.round(wWidth / 2) - 200;
                    var container_size_H = $diamonds.height()*2-100;
 
                     if(wHeight - 200 < container_size){container_size = wHeight - 200;}
                    zoom_factor = container_size / 600;
                   var left_margin = Math.round((Math.round(wWidth / 2) - container_size) / 2);
                   var top_margin = Math.round(Math.round(wHeight - container_size_H) / 2) - 30;
-                
-                
+
+
                   $el.css({"width" : container_size + "px", "height" : container_size_H + "px", "top" : top_margin + "px", "left" : left_margin + "px"});
                   $diamondsHolder.css({"height" : container_size_H + "px", "transform" : 'scale(' + zoom_factor + ')', "-webkit-transform" : 'scale(' + zoom_factor + ')', '-moz-transform': 'scale(' + zoom_factor + ')', 'top' : 0, 'left' : '0'});
-                
-              } 
+
+              }
 
                 /////////////////////////////////// INFERIEUR OU EGALE A 1024////////////////////////////////////////////////////
 
@@ -92,10 +101,10 @@ define(['jquery', 'jqueryUI'], function($, u){
               {
                 var container_size = 600;
                 var images_holder_top = "";
-                
+
                 if(wWidth < 401){
                   container_size  = 360;
-                  zoom_factor = 0.6;  
+                  zoom_factor = 0.6;
                 }
 
                   $el.css({"width" : "", "height": "", "top" : '', "left": ''});
@@ -106,7 +115,7 @@ define(['jquery', 'jqueryUI'], function($, u){
                 /////////////////////////////////// SUPERIEUR A 1600 ////////////////////////////////////////////////////
 
               else
-              {    
+              {
                   var container_size = 600;
                   var container_size_H = (container_size/2)+100;
 
@@ -124,43 +133,43 @@ define(['jquery', 'jqueryUI'], function($, u){
               var diamonds_top = 'inherit';
               if(wWidth < 1025){
                 var diamonds_top = 'inherit';
-              
+
               } else if(wWidth >= 1025 && wWidth < 1600) {
                 diamonds_top = Math.round((wHeight - diamonds_height) ) / 4 ;
               } else {
                diamonds_top = Math.round((wHeight - diamonds_height) / 2) ;
-              } 
-              
-              if(wWidth < 401){
-                zoom_factor = 0.6;  
               }
-              
-              
+
+              if(wWidth < 401){
+                zoom_factor = 0.6;
+              }
+
+
 
               /////////////////////////////////// SUPERIERUR A 1024 /////////////////////////////////////////////////
-              
+
               if(wWidth > 1024)
               {
                   var l_projects_width = wWidth / 2 - 10;
                   var l_projects_height = wHeight - 20;
-              } 
+              }
 
                /////////////////////////////////// INFERIEUR A 1024 /////////////////////////////////////////////////
-               
-              else 
+
+              else
               {
 
                   var l_projects_width = wWidth - 20;
                   var l_projects_height = 800;
                   if(wWidth >= 580 && wWidth < 780)
                     {
-                      l_projects_height = 1250; 
-                    } 
+                      l_projects_height = 1250;
+                    }
                     else if(wWidth < 580)
                     {
                       l_projects_height = 1100;
                     }
-                    
+
                }
                if(artistTrigger || $(window).width() > 1024)
                {
@@ -175,27 +184,27 @@ define(['jquery', 'jqueryUI'], function($, u){
 
 
             var wWidth = $(window).width();
-            
+
             if(wWidth > 780){
-              max_row = 3; 
+              max_row = 3;
             } else if(wWidth <= 780 && wWidth > 580){
               max_row = 2;
-              
+
             } else {
               max_row = 1;
             }
-            
+
             //var max_row = 3;
             var min_row = max_row - 1;
             if(min_row < 1){min_row = 1;}
-            
+
             if(max_row < 3){
-              
+
             } else {
-              $diamondsHolder.css({"width" : "600px"}); 
+              $diamondsHolder.css({"width" : "600px"});
             }
             var counter = 0;
-            
+
             var no_elements = $diamondsWrapper.size();
             var no_steps = Math.ceil(no_elements / (max_row + min_row));
 
@@ -216,31 +225,33 @@ define(['jquery', 'jqueryUI'], function($, u){
                     var time_delay = 500 + Math.round(Math.random() * 500) ;
                     $diamondsWrapper.eq(counter).stop(false,false).animate({'left' : y + 'px', 'top' : x + 'px', 'opacity' : 1}, time_delay);
                   }
-                  
+
                   counter++;
 
                 }
-                
+
                 for(var j = 0; j < max_row; j++){ // second pass Nombre de colonnes pour le seconde ligne ici 2
 
                   var x = i * tile_width + tile_width /2;
                   var y = j * tile_width ;
-                  
+
                   if(counter < no_elements){
                     var time_delay = 500 + Math.round(Math.random() * 500) ;
                     $diamondsWrapper.eq(counter).stop(false,false).animate({'left' : y + 'px', 'top' : x + 'px', 'opacity' : 1}, time_delay);
 
-                   
+
                   }
-                  
+
                   counter++;
                 }
-              } 
+              }
             }
           }
 
 
     })();
+
+ })
 
 })
 

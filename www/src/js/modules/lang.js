@@ -1,6 +1,8 @@
 
 define(['jquery'], function($){
 
+  $( document ).ready(function() {
+
      var lang = (function(){
 
 
@@ -101,6 +103,7 @@ define(['jquery'], function($){
 
     })();
 
+  })
 
 })
 

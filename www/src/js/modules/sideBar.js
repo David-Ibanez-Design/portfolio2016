@@ -1,5 +1,7 @@
 define(['jquery', 'hightLight'], function($,hljs){
 
+$( document ).ready(function() {
+
     (function(){
 
       var sideBar = {
@@ -265,5 +267,7 @@ define(['jquery', 'hightLight'], function($,hljs){
       sideBar.init();
 
     })();
+
+ })
 
 })

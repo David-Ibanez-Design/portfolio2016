@@ -1,5 +1,7 @@
-define(['jquery', 'libdotdot'], function($, t){
+define(['jquery', ''], function($, t){
 
+
+ $( document ).ready(function() {
 	 lenghtTextAbout();
 
 	  function lenghtTextAbout(){
@@ -20,8 +22,10 @@ define(['jquery', 'libdotdot'], function($, t){
 
 	    }
 
-	  }
+	  }libdotdot
 
 	  $(window).on("resize", function(){lenghtTextAbout();});
+
+  })
 
 })

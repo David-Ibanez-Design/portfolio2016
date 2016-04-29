@@ -1,5 +1,7 @@
 define(['jquery'], function($){
 
+$( document ).ready(function() {
+
     (function(){
 
       var headerScroll = {
@@ -27,7 +29,7 @@ define(['jquery'], function($){
             $(window).on('scroll', this.headerLayout.bind(this));
           },
 
-          rat: function (r) {   
+          rat: function (r) {
 
               if(r<0) return 0;
               if(r>1) return 1;
@@ -53,7 +55,7 @@ define(['jquery'], function($){
                     {
                         this.$main_navbar[0].style.cssText += "; height: " + (this.img_h -  wTop)+ "px;";
                         this.$cover_img[0].style.cssText += "; opacity: " + (0.3+ratio) + ";";
-                        
+
                     }
                     else
                     {
@@ -75,5 +77,7 @@ define(['jquery'], function($){
       headerScroll.init();
 
     })();
+
+  })
 
 })

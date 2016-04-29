@@ -1,5 +1,8 @@
 define(['jquery', 'scrollBar'], function($){
 
+
+ $( document ).ready(function() {
+
      var resumer = (function(){
 
 
@@ -74,5 +77,7 @@ define(['jquery', 'scrollBar'], function($){
           }
 
     })();
+
+  })
 
 })

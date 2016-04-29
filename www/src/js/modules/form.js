@@ -1,5 +1,6 @@
-define(['jquery'], function($, t){
+define(['jquery'], function($){
 
+$( document ).ready(function() {
 
   var form =  (function(){
 
@@ -190,5 +191,8 @@ define(['jquery'], function($, t){
 
 
     })();
+
+ })
+
 
 })
